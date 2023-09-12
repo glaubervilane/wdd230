@@ -1,0 +1,26 @@
+/* base.css */
+
+/* Layout */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Styling */ 
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100px;
+}
+
+/* other CSS styles */
