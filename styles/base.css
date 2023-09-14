@@ -56,20 +56,24 @@ main h2 {
 
 .card { 
   width: 100%;
-  border: 1px solid #000;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .card h3 {
   background-color: #1C4D72;
   color: #fff;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.card ul, li {
-  text-decoration: none;
-  align-items: center;
+ol {
+  list-style-position: inside; 
+  padding-left: 20px;
 }
-
 
 img {
   width: 100px;
