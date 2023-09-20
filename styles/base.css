@@ -73,6 +73,7 @@ main h2 {
 ol {
   list-style-position: inside; 
   padding-left: 20px;
+  text-align: left;
 }
 
 img {
