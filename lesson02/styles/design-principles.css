@@ -1,226 +1,63 @@
-* {
+
+body {  
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
+header {
+  background-color: #12486B;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Styles for screens smaller than 768px */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    text-align: center; /* Center-align the text */
-    position: absolute;
-    top: 10px; /* Adjust the top spacing as needed */
-    left: 0;
-    right: 0;
-    margin: 0 auto; /* Center horizontally */
-    width: max-content; /* Make the width fit the content */
-  }
-
-/* Reset the positioning of the icon */
-  .fa-brands.fa-algolia {
-      position: static; /* Reset the position */
-  }
-
-  .menu {
-    display: none;
-  }
-  .menu-icon {
-      display: flex;
-  }
-  
-  .menu-icon:focus-within + .menu,
-  .menu:hover {
-    display: block;
-  }
-
-  .searchbar {
-    width: 70%;
-    font-size: 14px;
-    padding: 5px;
-    border-radius: 15px;
-    right: 0;
-    left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .search {
-    font-size: 16px;
-  }
-
-  .login {
-    margin-top: 10px;
-    font-size: 12px;
-  }
-
-  .filter {
-    margin: 10px 0;
-  }
-
-  .container {
-    padding: 15px;
-  }
-
-  img {
-    max-width: 100%;
-  }
-}
-
-/* Styles for screens between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .searchbar {
-    width: 60%;
-    padding: 5px;
-    border-radius: 15px;
-    right: 0;
-    left: auto;
-}
-
-  .login {
-    margin-top: 10px;
-  }
-
-  .container {
-    padding: 15px;
-  }
-}
-
-/* Styles for screens larger than 1024px */
-@media (min-width: 1025px) {
-  .searchbar {
-    width: 30%;
-    max-width: 400px;
-    margin-top: 0;
-  }
-
-  .login {
-    margin-top: 0;
-  }
-
-  .container {
-    padding: 30px;
-  }
-}
-
-/* Common styles for all screen sizes */
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-.logo {
-  color: #ff4668;
-  align-items: center;
-  position: relative;
-  left: 50px;
-  top: 7px;
-}
-
-.searchbar {
-  display: flex;
-  border: solid black 2px;
-  border-radius: 30px;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px;
-}
-
-.searchbar p {
+header h1 {
   margin: 0;
 }
 
-.searchbar .search {
-  color: #ff4668;
+header p {
+  margin: 0;
+  font-style: italic;
 }
 
-i {
-  font-size: 20px;
-}
-
-.login {
-  border: solid black 1px;
-  border-radius: 30px;
-  padding: 10px;
-  align-items: center;
-}
-
-.login:hover {
-  color: #ff4668;
-}
-
-.menu-items {
-  padding: 15px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.filter {
-  text-align: center;
-  color: rgb(96, 93, 93);
-  display: inline-block;
-  position: relative;
-  margin: 10px;
-}
-
-.filter::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.filter:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.filter:hover {
-  color: #ff4668;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-  border-radius: 15px;
-}
-
-img {
-  border-radius: 15px;
-  transition-duration: 1s;
-}
-
-img:hover {
-  transform: scale(1.1);
-}
-
-.head {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
   padding: 20px;
-  position: relative;
-  left: 60px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align:center;
+}
+
+.card h2 {
+  border-radius: 5px 5px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #419197;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.card a {
+  color: #1100ff;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
 
 footer {
+  background: #1C4D72;
+  color: #fff;
+  padding: 2rem;
   text-align: center;
-  background-color: antiquewhite;
-  padding: 7px;
-  margin-top: 20px;
+  grid-column: 1 / 3;
 }
