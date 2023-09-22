@@ -43,15 +43,15 @@ body {
   }
 
   .searchbar {
-    width: 70%; /* Adjust the width as needed */
-    font-size: 14px; /* Smaller font size */
-    padding: 5px; /* Reduced padding */
-    border-radius: 15px; /* Adjust the border radius as needed */
-    right: 0; /* Reset the 'right' property */
-    left: auto; /* Reset the 'left' property */
+    width: 70%;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 15px;
+    right: 0;
+    left: auto;
     display: flex;
-    flex-direction: column; /* Stack the <p> elements vertically */
-    align-items: center; /* Center-align the <p> elements horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .search {
@@ -159,7 +159,7 @@ i {
   color: #ff4668;
 }
 
-.main {
+.menu-items {
   padding: 15px;
   display: flex;
   justify-content: space-around;
