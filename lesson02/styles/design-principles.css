@@ -15,15 +15,52 @@ body {
     align-items: center;
   }
 
+  .logo {
+    text-align: center; /* Center-align the text */
+    position: absolute;
+    top: 10px; /* Adjust the top spacing as needed */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+    width: max-content; /* Make the width fit the content */
+  }
+
+/* Reset the positioning of the icon */
+  .fa-brands.fa-algolia {
+      position: static; /* Reset the position */
+  }
+
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+      display: flex;
+  }
+  
+  .menu-icon:focus-within + .menu,
+  .menu:hover {
+    display: block;
+  }
+
   .searchbar {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    margin-top: 10px;
+    width: 70%; /* Adjust the width as needed */
+    font-size: 14px; /* Smaller font size */
+    padding: 5px; /* Reduced padding */
+    border-radius: 15px; /* Adjust the border radius as needed */
+    right: 0; /* Reset the 'right' property */
+    left: auto; /* Reset the 'left' property */
+    display: flex;
+    flex-direction: column; /* Stack the <p> elements vertically */
+    align-items: center; /* Center-align the <p> elements horizontally */
+  }
+
+  .search {
+    font-size: 16px;
   }
 
   .login {
     margin-top: 10px;
+    font-size: 12px;
   }
 
   .filter {
@@ -42,9 +79,12 @@ body {
 /* Styles for screens between 769px and 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   .searchbar {
-    width: 100%;
-    max-width: 80%;
-  }
+    width: 60%;
+    padding: 5px;
+    border-radius: 15px;
+    right: 0;
+    left: auto;
+}
 
   .login {
     margin-top: 10px;
