@@ -51,6 +51,12 @@ nav a {
   text-decoration: none;
 }
 
+.nav-link::before {
+  content: '➥';
+  margin-right: 0.5rem; 
+  color: #fff;
+}
+
 .active {
   color: #ffff00;
 }
