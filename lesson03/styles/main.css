@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: #007acc;
+}
+
+h2 {
+  color: #009933;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Schema */
+.primary-color {
+  color: #007acc;
+}
+
+.secondary-color {
+  color: #009933;
+}
+
+/* Typography */
+.heading-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+.body-font {
+  font-family: "Arial", sans-serif;
+}
+
+/* Wireframe */
+.wireframe {
+  border: 2px dashed #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
