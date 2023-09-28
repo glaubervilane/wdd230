@@ -18,6 +18,23 @@ p {
   line-height: 1.4;
 }
 
+header {
+  text-align: center;
+  background: #1C4D72;
+  padding: 20px;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
 /* Container Styles */
 .container {
   max-width: 800px;
