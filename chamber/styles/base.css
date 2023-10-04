@@ -60,13 +60,16 @@ button {
 }
 
 .hero {
-  background-image: url('../images/hero-image.png');  
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('../images/hero-image.png');
+
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 200px;
   text-align: center;
-  background-color: #000;
 }
 
 .hero-content {
