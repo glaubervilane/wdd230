@@ -102,6 +102,51 @@ button {
   color: #000;
 }
 
+.events-weather {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style the Current Event(s) Section (Make it Larger) */
+.current-events {
+  flex: 2;
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the Weather Card Section */
+.weather-card {
+  flex: 1; /* Takes up 1/3 of the available space */
+  background-color: #ffcc00;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Remove the flex-direction property to stack events vertically */
+.current-events {
+  flex-direction: column;
+}
+
+.events {
+  flex: 0 0 70%;
+  margin-bottom: 20px;
+  border-style: outset;
+  border-radius: 5px;
+}
+
+/* Add some spacing between events for better readability */
+.event {
+  margin-bottom: 20px;
+}
+
+.event p {
+  padding: 5px;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav-menu {
@@ -180,5 +225,19 @@ button {
   .cta-button {
     font-size: 16px;
     padding: 8px 16px;
+  }
+
+  /* Adjust the layout for events and weather card */
+  .events {
+    display: block;
+  }
+
+  .event {
+    margin-bottom: 20px; /* Add spacing between events for better readability */
+  }
+
+  .weather-card {
+    flex: 0 0 30%; /* Set the weather card to take at least 30% of the width */
+    margin: 20px; /* Add some spacing between events and the weather card */
   }
 }
