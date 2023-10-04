@@ -66,21 +66,14 @@
     </nav>
   </header>  
   
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Calgary Chamber of Commerce</h1>
+      <p>Connecting Businesses, Building Communities</p>
+      <a href="#" class="cta-button">Join Now</a>
+    </div>
+  </section>  
   
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    });
-  
-    document.querySelectorAll(".nav-link").forEach((navLink) => {
-      navLink.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-      });
-    });
-  </script>
+  <script src="scripts/hamburger.js"></script>
 </body>
 </html>
