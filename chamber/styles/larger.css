@@ -1,0 +1,44 @@
+/* Media query for larger screens */
+@media screen and (min-width: 1025px) {
+  /* Adjust the layout for the header */
+  header {
+    padding: 50px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+  }
+
+  .logo img {
+    max-width: 100px;
+  }
+
+  /* Adjust the layout for the hero section */
+  .hero {
+    padding: 200px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  /* Adjust the layout for events and weather card */
+  .events-weather {
+    flex-direction: row;
+  }
+
+  .events {
+    flex: 0 0 70%;
+    margin-bottom: 20px;
+  }
+}
