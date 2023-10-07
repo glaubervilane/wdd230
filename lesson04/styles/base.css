@@ -1,0 +1,257 @@
+/* Default styles for larger screens */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1C4D72;
+  padding: 50px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.nav-menu {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('../images/hero-image.png');
+
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 200px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009933;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.events-weather {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style the Current Event(s) Section (Make it Larger) */
+.current-events {
+  flex: 2;
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the Weather Card Section */
+.weather-card {
+  flex: 1;
+  background-color: #ffcc00;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Remove the flex-direction property to stack events vertically */
+.current-events {
+  flex-direction: column;
+}
+
+.events {
+  flex: 0 0 70%;
+  margin-bottom: 20px;
+}
+
+/* Add some spacing between events for better readability */
+.event {
+  margin-bottom: 20px;
+}
+
+.event h3 {
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.event p {
+  padding: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .search-field {
+    max-width: 100px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero-content {
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* Adjust the layout for events and weather card */
+  .events {
+    display: block;
+  }
+
+  .event {
+    margin-bottom: 20px; /* Add spacing between events for better readability */
+  }
+
+  .weather-card {
+    flex: 0 0 30%; /* Set the weather card to take at least 30% of the width */
+    margin: 20px; /* Add some spacing between events and the weather card */
+  }
+}
