@@ -177,6 +177,10 @@ button {
   border-radius: 8px;
 }
 
+.articles p {
+  padding: 0 50px 0 50px;
+}
+
 .calendar {
   flex: 1;
   border: 1px solid #ccc;
