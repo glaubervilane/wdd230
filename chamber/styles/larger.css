@@ -41,4 +41,13 @@
     flex: 0 0 70%;
     margin-bottom: 20px;
   }
+
+  .articles-calendar {
+    flex-direction: row;
+  }
+
+  .articles {
+    flex: 0 0 70%;
+    margin-bottom: 20px;
+  }
 }

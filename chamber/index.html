@@ -1,116 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Glauber Marques - WDD 230 - Chamber of Commerce Webpage</title>
-  <meta name="author" content="Glauber Marques" />
-  <meta name="description" content="WDD 230 - Chamber of Commerce Webpage">
-  <meta property="og:title" content="Glauber Marques WDD230 Assignment Chamber of Commerce Webpage">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.mustdocanada.com/wp-content/uploads/2022/12/Calgary-in-the-winter-1024x683.jpg">
-  <meta property="og:url" content="https://glaubervilane.github.io/wdd230/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Glauber Marques - WDD 230 - Chamber of Commerce Webpage</title>
+    <meta name="author" content="Glauber Marques" />
+    <meta name="description" content="WDD 230 - Chamber of Commerce Webpage" />
+    <meta
+      property="og:title"
+      content="Glauber Marques WDD230 Assignment Chamber of Commerce Webpage"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.mustdocanada.com/wp-content/uploads/2022/12/Calgary-in-the-winter-1024x683.jpg"
+    />
+    <meta property="og:url" content="https://glaubervilane.github.io/wdd230/" />
 
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat+Alternates:wght@300;400&family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200&display=swap"
-  />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat+Alternates:wght@300;400&family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200&display=swap"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-..."
-    crossorigin="anonymous"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
 
-  <!-- Icon library to show a hamburger menu (bars) on small screens -->
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    <!-- Icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
-  <link rel="icon" href="favicon.ico">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <a href="#">
-        <img src="images/logo.png" alt="Logo">
-      </a>
-    </div>
-    <nav>
-      <div class="hamburger" role="button" aria-label="Toggle Navigation Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
       </div>
-      <ul class="nav-menu">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Discover</a>
-        <a href="#" class="nav-link">Directory</a>
-        <a href="#" class="nav-link">Join</a>
-        <div>
-          <input class="search-field" type="text" placeholder="Search">
-          <button class="search-item"><i class="fa fa-search"></i></button>
+      <nav>
+        <div
+          class="hamburger"
+          role="button"
+          aria-label="Toggle Navigation Menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </ul>
-    </nav>
-  </header>  
-  
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to the Calgary Chamber of Commerce</h1>
-      <p>Connecting Businesses, Building Communities</p>
-      <a href="#" class="cta-button">Join Now</a>
-    </div>
-  </section>  
-  
-  <section class="events-weather">
-    <div class="events">
+        <ul class="nav-menu">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Discover</a>
+          <a href="#" class="nav-link">Directory</a>
+          <a href="#" class="nav-link">Join</a>
+          <div>
+            <input class="search-field" type="text" placeholder="Search" />
+            <button class="search-item"><i class="fa fa-search"></i></button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Calgary Chamber of Commerce</h1>
+        <p>Connecting Businesses, Building Communities</p>
+        <a href="#" class="cta-button">Join Now</a>
+      </div>
+    </section>
+
+    <section class="events-weather">
+      <div class="events">
         <h1>Current Event(s)</h1>
         <div class="event">
-            <h3>Event 1</h3>
-            <p>Date: January 15, 2024</p>
-            <p>Location: City Hall</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla libero sit amet urna vehicula.</p>
+          <h3>Annual Business Summit 2024</h3>
+          <p>Date: January 15, 2024</p>
+          <p>Location: Grand City Hall</p>
+          <p>
+            Description: Join us for the most anticipated event of the year, the
+            Annual Business Summit 2024. This exclusive gathering will bring
+            together industry leaders, innovators, and entrepreneurs from around
+            the globe. Discover the latest trends, network with like-minded
+            professionals, and gain valuable insights to propel your business
+            forward. Don't miss this opportunity to be part of something
+            extraordinary!
+          </p>
         </div>
         <div class="event">
-            <h3>Event 2</h3>
-            <p>Date: February 22, 2024</p>
-            <p>Location: Community Center</p>
-            <p>Description: Sed quis justo non arcu blandit tincidunt. Nulla facilisi. Nulla facilisi.</p>
+          <h3>Tech Innovators Forum 2024</h3>
+          <p>Date: February 22, 2024</p>
+          <p>Location: Community Center</p>
+          <p>
+            Description: Join us at the Tech Innovators Forum 2024, where
+            cutting-edge technology and innovation converge. This event is
+            designed for tech enthusiasts, startups, and industry professionals
+            looking to stay ahead of the curve. Explore groundbreaking
+            technologies, engage in insightful discussions, and connect with
+            visionaries shaping the future. Be part of the revolution!
+          </p>
         </div>
         <div class="event">
-            <h3>Event 3</h3>
-            <p>Date: March 10, 2024</p>
-            <p>Location: Recreation Center</p>
-            <p>Description: Sed quis justo non arcu blandit tincidunt. Nulla facilisi. Nulla facilisi.</p>
+          <h3>Spring Festival 2024</h3>
+          <p>Date: March 10, 2024</p>
+          <p>Location: Recreation Center</p>
+          <p>
+            Description: Embrace the arrival of spring at our Spring Festival
+            2024! This vibrant event celebrates the season of renewal with a
+            colorful array of activities for all ages. Enjoy live music,
+            delicious food, arts and crafts, and much more. Whether you're a
+            nature enthusiast, a foodie, or simply looking for family fun, this
+            festival has something for everyone. Join us in welcoming the beauty
+            of spring!
+          </p>
         </div>
-    </div>
-    <div class="weather-card">
+      </div>
+      <div class="weather-card">
         <h3>Weather</h3>
         <p>Calgary, Alberta, Canada</p>
         <p>☀️ 76&deg;F - Sunshine</p>
-    </div>
-  </section>  
+        <h3>Weather Fun Fact:</h3>
+        <p class="fun-fact">
+          Did you know that Calgary, Alberta, is known for its famous Calgary
+          Stampede? This annual rodeo and exhibition event is one of the largest
+          in the world and brings the spirit of the Wild West to the city. Join
+          us this summer for thrilling rodeo performances, live music, delicious
+          food, and a whole lot of cowboy fun!
+        </p>
+      </div>
+    </section>
 
-  <footer>
-    <p>©<span id="copyright"></span></p>
-    <p>Glauber V F Marques | Chamber of Commerce , Calgary, Canada</p> 
-    <p>Assignment | WDD230 Front end | from BUY Idaho</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
-  
-  <script src="scripts/getdates.js"></script>
-  <script src="scripts/hamburger.js"></script>
-</body>
+    <section class="articles-calendar">
+      <div class="articles">
+        <h1>Latest Articles</h1>
+        <article>
+          <h3>Article 1 Title</h3>
+          <p>Date: September 25, 2024</p>
+          <p>Author: John Doe</p>
+          <p>
+            Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam commodo, risus eget laoreet fringilla, neque turpis
+            viverra justo.
+          </p>
+        </article>
+        <article>
+          <h3>Article 2 Title</h3>
+          <p>Date: September 24, 2024</p>
+          <p>Author: Jane Smith</p>
+          <p>
+            Description: Vivamus vitae nunc et felis scelerisque fermentum eu
+            non dolor. Fusce non libero in nisi eleifend laoreet vel eget nisi.
+          </p>
+        </article>
+        <!-- Add more articles as needed -->
+      </div>
+      <div class="calendar">
+        <h3>Upcoming Events Calendar</h3>
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <span class="calendar-month">September</span>
+            <span class="calendar-year">2024</span>
+          </div>
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th class="calendar-day">Sun</th>
+                <th class="calendar-day">Mon</th>
+                <th class="calendar-day">Tue</th>
+                <th class="calendar-day">Wed</th>
+                <th class="calendar-day">Thu</th>
+                <th class="calendar-day">Fri</th>
+                <th class="calendar-day">Sat</th>
+              </tr>
+              <tr>
+                <td class="calendar-day">1</td>
+                <td class="calendar-day">2</td>
+                <td class="calendar-day">3</td>
+                <td class="calendar-day">4</td>
+                <td class="calendar-day">5</td>
+                <td class="calendar-day">6</td>
+                <td class="calendar-day">7</td>
+              </tr>
+              <tr>                
+                <td class="calendar-day">8</td>
+                <td class="calendar-day">9</td>
+                <td class="calendar-day">10</td>
+                <td class="calendar-day">11</td>
+                <td class="calendar-day">12</td>
+                <td class="calendar-day">13</td>
+                <td class="calendar-day">14</td>
+              </tr>
+              <tr>                
+                <td class="calendar-day">15</td>
+                <td class="calendar-day">16</td>
+                <td class="calendar-day">10</td>
+                <td class="calendar-day">17</td>
+                <td class="calendar-day">18</td>
+                <td class="calendar-day">19</td>
+                <td class="calendar-day">20</td>
+              </tr>
+              <tr>                
+                <td class="calendar-day">21</td>
+                <td class="calendar-day">22</td>
+                <td class="calendar-day">23</td>
+                <td class="calendar-day">24</td>
+                <td class="calendar-day">25</td>
+                <td class="calendar-day">26</td>
+                <td class="calendar-day">27</td>
+              </tr>
+              <tr>                
+                <td class="calendar-day">28</td>
+                <td class="calendar-day">29</td>
+                <td class="calendar-day">30</td>
+                <td class="calendar-day">31</td>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Calendar cells will be generated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>©<span id="copyright"></span></p>
+      <p>Glauber V F Marques | Chamber of Commerce , Calgary, Canada</p>
+      <p>Assignment | WDD230 Front end | from BUY Idaho</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/populateCalendar.js"></script>
+
+  </body>
 </html>

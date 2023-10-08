@@ -36,6 +36,10 @@
   .events-weather {
     flex-direction: column;
   }
+  
+  .articles-calendar {
+    flex-direction: column;
+  }
 
   .events {
     flex: 1;
@@ -43,6 +47,16 @@
   }
 
   .weather-card {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .articles article {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .calendar {
     flex: 1;
     margin: 10px;
   }
