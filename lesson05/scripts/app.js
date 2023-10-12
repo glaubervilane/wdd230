@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       input.value = "";
     } else {
-      // Provide a message or do nothing
-      // For now, let's just display an alert message
       alert("Please enter a book and chapter.");
       input.focus();
     }
