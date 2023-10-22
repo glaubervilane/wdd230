@@ -131,7 +131,9 @@
       <div class="weather-card">
         <h3>Weather</h3>
         <p>Calgary, Alberta, Canada</p>
-        <p>☀️ 76&deg;F - Sunshine</p>
+        <p>☀️ <span id="temperature">76</span>&deg;F - Sunshine</p>
+        <p>Wind Speed: <span id="wind-speed">5.0</span> mph</p>
+        <p id="wind-chill">Wind Chill: Calculating...</p>
         <h3>Weather Fun Fact:</h3>
         <p class="fun-fact">
           Did you know that Calgary, Alberta, is known for its famous Calgary
@@ -140,7 +142,7 @@
           us this summer for thrilling rodeo performances, live music, delicious
           food, and a whole lot of cowboy fun!
         </p>
-      </div>
+      </div>      
     </section>
 
     <section class="articles-calendar">
@@ -257,6 +259,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/populateCalendar.js"></script>
     <script src="scripts/updateDarkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
 
   </body>
 </html>
