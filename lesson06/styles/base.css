@@ -1,0 +1,431 @@
+/* Default styles for larger screens */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1C4D72;
+  padding: 50px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.nav-menu {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  list-style-type: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #009933;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.events-weather {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles-calendar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style the Current Event(s) Section (Make it Larger) */
+.current-events {
+  flex: 2;
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the Weather Card Section */
+.weather-card {
+  flex: 1;
+  background-color: #ffcc00;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Remove the flex-direction property to stack events vertically */
+.current-events {
+  flex-direction: column;
+}
+
+.events {
+  flex: 0 0 70%;
+  margin-bottom: 20px;
+}
+
+/* Add some spacing between events for better readability */
+.event {
+  margin-bottom: 20px;
+}
+
+.event h3 {
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.event p {
+  padding: 0 50px 0 50px;
+}
+
+.fun-fact {
+  padding:40px
+}
+
+.articles {
+  flex: 0 0 70%;
+  margin-bottom: 20px;
+}
+
+.articles h3 {
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.articles p {
+  padding: 0 50px 0 50px;
+}
+
+.calendar {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.calendar h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-month {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar-year {
+  font-size: 16px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-day {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .dark-footer {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+/* Add styles for the dark mode */
+.dark-mode .weather-card {
+  background-color: #1C4D72;
+}
+
+.dark-mode .slider {
+  background-color: #fff;
+}
+
+/* Add styles for the dark mode */
+.dark-mode .calendar {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+/* Modify the styles for specific elements in dark mode if needed */
+.dark-mode .calendar h3 {
+  color: #fff;
+}
+
+.dark-mode .calendar-day {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .search-field {
+    max-width: 100px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero-content {
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .events {
+    display: block;
+  }
+
+  .event {
+    margin-bottom: 20px;
+  }
+
+  .weather-card {
+    flex: 0 0 30%;
+    margin: 20px;
+  }
+
+  .articles article {
+    display: block;
+  }
+
+  .calendar {
+    flex: 0 0 30%;
+    margin: 20px;
+  }
+}
