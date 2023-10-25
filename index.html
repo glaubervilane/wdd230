@@ -94,7 +94,9 @@
       <section class="card right-card">
         <h3>Information</h3>
         <p>Calgary, Alberta, Canada</p>
-        <p>☀️ 76&deg;F - Sunshine</p>
+        <p>☀️ <span id="temperature"></span>&deg; - Sunshine</p>
+        <p>Wind Speed: <span id="wind-speed">5.0</span> mph</p>
+        <p id="wind-chill">Wind Chill: Calculating...</p>
         <p>Page Visits: <span class="visit-count"></span></p>
       </section><br>
     </div>  
@@ -115,6 +117,7 @@
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/getVisits.js"></script>
+  <script src="scripts/windchill.js"></script>
 
 </body>
 </html>
