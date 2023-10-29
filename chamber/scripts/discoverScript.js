@@ -21,26 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         lastVisitInfo.textContent = `You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.`;
     }
 
-    // Lazy load images only if the "main-content" section is empty
-    const imageGallery = document.querySelector(".main-content");
-    if (imageGallery.innerHTML.trim() === "") {
-        const images = [
-            "./images/image1.png",
-            "./images/image2.png",
-            "./images/image3.png",
-            "./images/image4.png",
-            "./images/image5.png",
-            "./images/image6.png"
-        ];
-
-        images.forEach((imageUrl) => {
-            const image = new Image();
-            image.src = imageUrl;
-            image.loading = "lazy";
-            imageGallery.appendChild(image);
-        });
-    }
-
     // Save the current visit timestamp to localStorage
     localStorage.setItem("lastVisit", Date.now().toString());
 });
