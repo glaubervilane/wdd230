@@ -6,19 +6,22 @@ body {
   text-align: center;
 }
 
+/* Header styles */
 header {
   font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1C4D72;
-  padding: 50px;
+  padding: 20px 30px;
 }
 
+/* Logo styles */
 .logo img {
   max-width: 100px;
 }
 
+/* Navigation menu styles */
 .nav-menu {
   float: left;
   display: flex;
@@ -308,7 +311,7 @@ footer {
   padding: 20px;
 }
 
-/* Add styles for the dark mode */
+/* Styles for the dark mode */
 .dark-mode .weather-card {
   background-color: #1C4D72;
 }
@@ -317,14 +320,12 @@ footer {
   background-color: #fff;
 }
 
-/* Add styles for the dark mode */
 .dark-mode .calendar {
   background-color: #333;
   border-color: #555;
   color: #fff;
 }
 
-/* Modify the styles for specific elements in dark mode if needed */
 .dark-mode .calendar h3 {
   color: #fff;
 }
@@ -334,15 +335,17 @@ footer {
   color: #fff;
 }
 
+/* Main container styles (Grid layout)  Discover page*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Sidebar styles Discover page*/
 .sidebar {
   background-color: #eee;
   padding: 20px;
@@ -361,11 +364,23 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
+  /* Lazy loading effect */
+  opacity: 0.7; /* Initial opacity */
+  transition: opacity 0.3s ease-in-out;
+  /* Add hover effect (e.g., scale) */
+  overflow: hidden;
 }
 
 .image-gallery img {
   width: 100%;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add styles for the hover effect */
+.image-gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Media query for smaller screens */
@@ -468,5 +483,14 @@ footer {
   .calendar {
     flex: 0 0 30%;
     margin: 20px;
+  }
+
+  /* Styles for mobile image gallery (single column) */
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .image-gallery img {
+    transform: none;
   }
 }
