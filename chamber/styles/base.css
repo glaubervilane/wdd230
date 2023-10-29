@@ -347,12 +347,25 @@ footer {
 
 /* Sidebar styles Discover page*/
 .sidebar {
-  background-color: #eee;
+  background-color: #f7b731;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .visit-message {
   font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #1C4D72;
+  border-radius: 5px;
+}
+
+/* Impressive hover effect for the message */
+.visit-message:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 .main-content {
@@ -362,17 +375,16 @@ footer {
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  place-items: center; /* Center both horizontally and vertically */
   /* Lazy loading effect */
   opacity: 0.7; /* Initial opacity */
   transition: opacity 0.3s ease-in-out;
-  /* Add hover effect (e.g., scale) */
-  overflow: hidden;
 }
 
 .image-gallery img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -380,7 +392,7 @@ footer {
 
 /* Add styles for the hover effect */
 .image-gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Media query for smaller screens */
