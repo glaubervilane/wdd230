@@ -66,42 +66,46 @@
   </header>
 
   <main>
-    <div class="form-area">
-      <h1 class="form-heading">Chamber of Commerce Membership Application</h1>
-      <form action="thankyou.html" method="get">
-        <label for="firstName" class="form-label">Applicant's First Name:</label>
-        <input type="text" id="firstName" name="firstName" class="form-input form-name" required>
 
-        <label for="lastName" class="form-label">Applicant's Last Name:</label>
-        <input type="text" id="lastName" name="lastName" class="form-input form-name" required>
+    <form action="thankyou.html" method="get">
+      <div class="form-container">
+        <div class="form-area">
+          <h1 class="form-heading">Chamber of Commerce Membership Application</h1>
+          <label for="firstName" class="form-label">Applicant's First Name:</label>
+          <input type="text" id="firstName" name="firstName" class="form-input form-name" required>
 
-        <label for="title" class="form-label">Title/Position:</label>
-        <input type="text" id="title" name="title" class="form-input form-title" pattern="[A-Za-z\- ]{7,}" required>
+          <label for="lastName" class="form-label">Applicant's Last Name:</label>
+          <input type="text" id="lastName" name="lastName" class="form-input form-name" required>
 
-        <label for="email" class="form-label">Email Address:</label>
-        <input type="email" id="email" name="email" class="form-input" required placeholder="example@example.com">
+          <label for="title" class="form-label">Title/Position:</label>
+          <input type="text" id="title" name="title" class="form-input form-title" pattern="[A-Za-z\- ]{7,}" required>
 
-        <label for="phone" class="form-label">Mobile Phone Number:</label>
-        <input type="tel" id="phone" name="phone" class="form-input" required>
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="email" id="email" name="email" class="form-input" required placeholder="example@example.com">
 
-        <label for="organizationName" class="form-label">Business/Organization Name:</label>
-        <input type="text" id="organizationName" name="organizationName" class="form-input" required>
+          <label for="phone" class="form-label">Mobile Phone Number:</label>
+          <input type="tel" id="phone" name="phone" class="form-input" required>
 
-        <label for="membershipLevel" class="form-label">Membership Level:</label>
-        <select id="membershipLevel" name="membershipLevel" class="form-input">
-          <option value="NP">NP Membership (No Fee)</option>
-          <option value="Bronze">Bronze Membership</option>
-          <option value="Silver">Silver Membership</option>
-          <option value="Gold">Gold Membership</option>
-        </select>
+          <label for="organizationName" class="form-label">Business/Organization Name:</label>
+          <input type="text" id="organizationName" name="organizationName" class="form-input" required>
 
-        <label for="description" class="form-label">Business/Organization Description:</label>
-        <textarea id="description" name="description" class="form-textarea" rows="5"></textarea>
+          <label for="description" class="form-label">Business/Organization Description:</label>
+          <textarea id="description" name="description" class="form-textarea" rows="5"></textarea>
 
-        <input type="hidden" id="timestamp" name="timestamp">
-        <button type="submit" class="form-button">Submit Application</button>
-      </form>
-    </div>
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button type="submit" class="form-button">Submit Application</button>
+        </div>
+        <div class="benefits-area">
+          <label for="membershipLevel" class="form-label">Membership Level:</label>
+          <select id="membershipLevel" name="membershipLevel" class="form-input">
+            <option value="NP">NP Membership (No Fee)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </div>
+      </div>
+    </form>
   </main>
 
   <footer>

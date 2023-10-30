@@ -395,14 +395,17 @@ footer {
   transform: scale(1.1);
 }
 
+/* Style the form container */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Style the form area */
 .form-area {
-  display:block;
-  justify-content: center;
-  align-items: center;
-  padding-left: 30%;
-  padding-right: 30%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  flex: 1;
+  padding: 40px;
 }
 
 /* Style the form title */
@@ -458,6 +461,24 @@ footer {
 #organizationName {
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* Style the benefits area */
+.benefits-area {
+  flex: 1;
+  margin: 50px;
+  border-radius: 5px;
+}
+
+/* Style the benefits content (you can adjust this as needed) */
+.benefits-area h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefits-area ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 /* Media query for smaller screens */
@@ -569,5 +590,13 @@ footer {
 
   .image-gallery img {
     transform: none;
+  }
+  
+  .form-container {
+    flex-direction: column;
+  }
+
+  .benefits-area {
+    margin-top: 20px;
   }
 }
