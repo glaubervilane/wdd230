@@ -395,6 +395,71 @@ footer {
   transform: scale(1.1);
 }
 
+.form-area {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Style the form title */
+.form-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style form labels */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the form textarea */
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the form submit button */
+.form-button {
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #009933;
+}
+
+#firstName,
+#lastName,
+#title,
+#organizationName {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav-menu {

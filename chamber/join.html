@@ -66,43 +66,42 @@
   </header>
 
   <main>
-    <h1>Chamber of Commerce Membership Application</h1>
-    <form action="thankyou.html" method="get">
-      <label for="firstName">Applicant's First Name:</label>
-      <input type="text" id="firstName" name="firstName" required>
+    <div class="form-area">
+      <h1 class="form-heading">Chamber of Commerce Membership Application</h1>
+      <form action="thankyou.html" method="get">
+        <label for="firstName" class="form-label">Applicant's First Name:</label>
+        <input type="text" id="firstName" name="firstName" class="form-input form-name" required>
 
-      <label for="lastName">Applicant's Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required>
+        <label for="lastName" class="form-label">Applicant's Last Name:</label>
+        <input type="text" id="lastName" name="lastName" class="form-input form-name" required>
 
-      <label for="title">Title/Position:</label>
-      <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required>
-      <!-- Pattern enforces at least seven characters of letters, hyphens, and spaces -->
+        <label for="title" class="form-label">Title/Position:</label>
+        <input type="text" id="title" name="title" class="form-input form-title" pattern="[A-Za-z\- ]{7,}" required>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required placeholder="example@example.com">
+        <label for="email" class="form-label">Email Address:</label>
+        <input type="email" id="email" name="email" class="form-input" required placeholder="example@example.com">
 
-      <label for="phone">Mobile Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label for="phone" class="form-label">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-input" required>
 
-      <label for="organizationName">Business/Organization Name:</label>
-      <input type="text" id="organizationName" name="organizationName" required>
+        <label for="organizationName" class="form-label">Business/Organization Name:</label>
+        <input type="text" id="organizationName" name="organizationName" class="form-input" required>
 
-      <label for="membershipLevel">Membership Level:</label>
-      <select id="membershipLevel" name="membershipLevel">
-        <option value="NP">NP Membership (No Fee)</option>
-        <option value="Bronze">Bronze Membership</option>
-        <option value="Silver">Silver Membership</option>
-        <option value="Gold">Gold Membership</option>
-      </select>
+        <label for="membershipLevel" class="form-label">Membership Level:</label>
+        <select id="membershipLevel" name="membershipLevel" class="form-input">
+          <option value="NP">NP Membership (No Fee)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
 
-      <label for="description">Business/Organization Description:</label>
-      <textarea id="description" name="description" rows="5"></textarea>
+        <label for="description" class="form-label">Business/Organization Description:</label>
+        <textarea id="description" name="description" class="form-textarea" rows="5"></textarea>
 
-      <input type="hidden" id="timestamp" name="timestamp">
-      <!-- JavaScript will populate the timestamp -->
-
-      <button type="submit">Submit Application</button>
-    </form>
+        <input type="hidden" id="timestamp" name="timestamp">
+        <button type="submit" class="form-button">Submit Application</button>
+      </form>
+    </div>
   </main>
 
   <footer>
