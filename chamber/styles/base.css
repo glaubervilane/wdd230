@@ -483,6 +483,29 @@ footer {
 
 .thankyou-area {
   margin-top: 50px;
+  text-align: center;
+}
+
+.thankyou-area h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.thankyou-area p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.data-item {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.data-item span {
+  font-weight: bold;
+  color: #007BFF;
 }
 
 .thanks-image {
@@ -490,6 +513,10 @@ footer {
   height: auto;
   margin: 50px auto 50px auto;
   border-radius: 400px;
+}
+
+.noborder {
+  border: none;
 }
 
 /* Media query for smaller screens */

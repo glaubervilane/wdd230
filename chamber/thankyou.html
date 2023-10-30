@@ -45,7 +45,7 @@
         <li><a href="./index.html" class="nav-link">Home</a></li>
         <li><a href="./discover.html" class="nav-link">Discover</a></li>
         <li><a href="#" class="nav-link">Directory</a></li>
-        <li><a href="#" class="nav-link">Join</a></li>
+        <li><a href="./join.html" class="nav-link">Join</a></li>
         <li>
           <div>
             <input class="search-field" type="text" placeholder="Search" />
@@ -67,12 +67,23 @@
 
   <main>
     <div class="thankyou-area">
-      <h1>Thank You for Your Submission</h1>
-      <p>Your application has been successfully submitted. We appreciate your interest in joining our chamber of
-        commerce.</p>
-      <p>If you have any questions or need further assistance, please don't hesitate to <a href="#">contact
-          us</a>.</p>
+      <h1>Thank You for Your Submission </h1>
+      <p>Your application has been successfully submitted. We appreciate your interest in joining our chamber of commerce.</p>
+      <p>If you have any questions or need further assistance, please don't hesitate to <a href="#">contact us</a>.</p>
       <img src="./images/thanks.jpg" class="thanks-image" alt="">
+      
+      <div class="data-submitted">
+        <h2>Here is the information you just submitted</h2>
+        <p>Applicant's First Name: <span id="firstName" class="noborder"></span></p>
+        <p>Applicant's Last Name: <span id="lastName"></span></p>
+        <p>Title/Position: <span id="title"></span></p>
+        <p>Email Address: <span id="email"></span></p>
+        <p>Mobile Phone Number: <span id="phone"></span></p>
+        <p>Business/Organization Name: <span id="organizationName"class="noborder"></span></p>
+        <p>Membership Level: <span id="membershipLevel"></span></p>
+        <p>Business/Organization Description: <span id="description"></span></p>
+        <p>Timestamp: <span id="timestamp"></span></p>
+      </div>
     </div>
   </main>
 
@@ -93,6 +104,7 @@
   <script src="scripts/populateCalendar.js"></script>
   <script src="scripts/updateDarkMode.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/renderFormData.js"></script>
 
 </body>
 
