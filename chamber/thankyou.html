@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glauber Marques - WDD 230 - Chamber of Commerce Thank you Webpage</title>
+  <meta name="author" content="Glauber Marques">
+  <meta name="description" content="WDD 230 - Chamber of Commerce Webpage">
+  <meta property="og:title" content="Glauber Marques WDD230 Assignment Chamber of Commerce Webpage - Thank you Webpage">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://www.mustdocanada.com/wp-content/uploads/2022/12/Calgary-in-the-winter-1024x683.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+
+  <!-- Icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <nav>
+      <div class="hamburger" role="button" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="./discover.html" class="nav-link">Discover</a></li>
+        <li><a href="#" class="nav-link">Directory</a></li>
+        <li><a href="#" class="nav-link">Join</a></li>
+        <li>
+          <div>
+            <input class="search-field" type="text" placeholder="Search" />
+            <button class="search-item"><i class="fa fa-search"></i></button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <!-- Rectangular switch to get dak mode-->
+            <label class="switch">
+              <input type="checkbox" id="darkModeToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="thankyou-area">
+      <h1>Thank You for Your Submission</h1>
+      <p>Your application has been successfully submitted. We appreciate your interest in joining our chamber of
+        commerce.</p>
+      <p>If you have any questions or need further assistance, please don't hesitate to <a href="#">contact
+          us</a>.</p>
+      <img src="./images/thanks.jpg" class="thanks-image" alt="">
+    </div>
+  </main>
+
+  <footer>
+    <div class="dark-footer">
+      <p>©<span id="copyright"></span></p>
+      <p>Glauber V F Marques | Chamber of Commerce , Calgary, Canada</p>
+      <p>Assignment | WDD230 Front end | from BUY Idaho</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("timestamp").value = new Date().toLocaleString();
+  </script>
+
+  <script src="scripts/getdates.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/populateCalendar.js"></script>
+  <script src="scripts/updateDarkMode.js"></script>
+  <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

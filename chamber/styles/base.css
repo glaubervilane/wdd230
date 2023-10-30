@@ -481,6 +481,17 @@ footer {
   padding-left: 20px;
 }
 
+.thankyou-area {
+  margin-top: 50px;
+}
+
+.thanks-image {
+  max-width: 50%;
+  height: auto;
+  margin: 50px auto 50px auto;
+  border-radius: 400px;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav-menu {
