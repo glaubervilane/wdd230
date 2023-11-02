@@ -23,10 +23,8 @@ function addQueryParameters(event) {
   const username = document.getElementById("username").value;
   const email = document.getElementById("email").value;
   const pageRating = document.getElementById("pageRating").value;
-  const timestamp = new Date().toLocaleString();
 
   document.getElementById("usernameHidden").value = username;
   document.getElementById("emailHidden").value = email;
   document.getElementById("pageRatingHidden").value = pageRating;
-  document.getElementById("timestampHidden").value = timestamp;
 }
