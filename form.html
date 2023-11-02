@@ -59,7 +59,7 @@
   </nav>
   <main>
     <div class="form-area">
-      <form class="main-form" action="record.html" method="get">
+      <form class="main-form" action="thankyou.html" method="get" onsubmit="addQueryParameters(event)">
         <h1 class="form-heading">Form Assignment</h1>
         <div class="form-field">
           <label for="username">Username:</label>
@@ -85,6 +85,7 @@
           <span id="ratingValue">5</span>
         </div>
 
+        <input type="hidden" id="timestamp" name="timestamp">
         <div>
           <button type="submit">Submit</button>
         </div>
@@ -97,15 +98,11 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script>
-    function updateRatingValue(value) {
-      document.getElementById("ratingValue").textContent = value;
-    }
-  </script>
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/getVisits.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/renderFormData.js"></script>
 
 </body>
 
