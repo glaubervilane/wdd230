@@ -58,55 +58,56 @@
     </div>
   </nav>
   <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <!-- ... (your existing head content) ... -->
-</head>
+  <head>
+    <!-- ... (your existing head content) ... -->
+  </head>
 
-<body>
-  <!-- ... (your existing body content) ... -->
-  <main>
-    <div class="form-area">
-      <form class="main-form" action="record.html" method="get" onsubmit="validateForm(event)">
-        <h1 class="form-heading">Form Assignment</h1>
-        <div class="form-field">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-        </div>
+  <body>
+    <!-- ... (your existing body content) ... -->
+    <main>
+      <div class="form-area">
+        <form class="main-form" action="record.html" method="get" onsubmit="validateForm(event)">
+          <h1 class="form-heading">Form Assignment</h1>
+          <div class="form-field">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
 
-        <div class="form-field">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-            title="Password must be at least 8 characters long and include both letters and numbers.">
-        </div>
+          <div class="form-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              title="Password must be at least 8 characters long and include both letters and numbers.">
+          </div>
 
-        <div class="form-field">
-          <label for="confirmPassword">Confirm Password:</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" required>
-        </div>
+          <div class="form-field">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+          </div>
 
-        <div class="form-field">
-          <label for="email">Email (BYUI only):</label>
-          <input type="email" id="email" name="email" required>
-        </div>              
+          <div class="form-field">
+            <label for="email">Email (BYUI only):</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-        <div class="form-field">
-          <label for="pageRating">Page Rating:</label>
-          <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
-            oninput="updateRatingValue(this.value)">
-          <span id="ratingValue">5</span>
-        </div>
+          <div class="form-field">
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
+              oninput="updateRatingValue(this.value)">
+            <span id="ratingValue">5</span>
+          </div>
 
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  </main>
-</body>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 
-</html>
+  </html>
 
   <footer>
     <p>©<span id="copyright"></span></p>
