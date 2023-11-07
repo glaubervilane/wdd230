@@ -28,3 +28,30 @@ function addQueryParameters(event) {
   document.getElementById("emailHidden").value = email;
   document.getElementById("pageRatingHidden").value = pageRating;
 }
+
+function validateForm(event) {
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+
+  if (password !== confirmPassword) {
+    event.preventDefault();
+    alert("Passwords do not match. Please make sure they match.");
+  }
+}
+
+function updateRatingValue(value) {
+  document.getElementById("ratingValue").textContent = value;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".main-form");
+  const emailInput = document.getElementById("email");
+
+  form.addEventListener("submit", function (event) {
+    const enteredEmail = emailInput.value.trim();
+    if (!enteredEmail.endsWith("@byui.edu")) {
+      event.preventDefault(); // Prevent the form from being submitted
+      alert("Please enter a valid @byui.edu email address.");
+    }
+  });
+});

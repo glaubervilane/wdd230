@@ -57,9 +57,18 @@
       <span class="bar"></span>
     </div>
   </nav>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ... (your existing head content) ... -->
+</head>
+
+<body>
+  <!-- ... (your existing body content) ... -->
   <main>
     <div class="form-area">
-      <form class="main-form" action="record.html" method="get" onsubmit="addQueryParameters(event)">
+      <form class="main-form" action="record.html" method="get" onsubmit="validateForm(event)">
         <h1 class="form-heading">Form Assignment</h1>
         <div class="form-field">
           <label for="username">Username:</label>
@@ -73,10 +82,14 @@
         </div>
 
         <div class="form-field">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-            title="Please enter a valid email address with a byui.edu domain.">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
         </div>
+
+        <div class="form-field">
+          <label for="email">Email (BYUI only):</label>
+          <input type="email" id="email" name="email" required>
+        </div>              
 
         <div class="form-field">
           <label for="pageRating">Page Rating:</label>
@@ -91,6 +104,10 @@
       </form>
     </div>
   </main>
+</body>
+
+</html>
+
   <footer>
     <p>©<span id="copyright"></span></p>
     <p>Glauber Marques | Calgary, Canada</p>
