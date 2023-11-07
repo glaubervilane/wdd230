@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const username = urlParams.get("username");
   const email = urlParams.get("email");
   const pageRating = urlParams.get("pageRating");
-  const timestamp = urlParams.get("timestamp");
 
   // Populate the corresponding elements
 document.getElementById("username").textContent = username;
 document.getElementById("email").textContent = email;
 document.getElementById("pageRating").textContent = pageRating;
-document.getElementById("timestamp").textContent = timestamp;
 });
 
 
