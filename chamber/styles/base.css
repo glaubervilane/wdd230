@@ -540,64 +540,6 @@ main {
   font-weight: 700;
 }
 
-.directory-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5px;
-  align-items: center;
-}
-
-.directory-grid section {
-  text-align: center;
-}
-
-.directory-grid img {
-  border: 1px solid #fff;
-  box-shadow: 0 0 10px #333;
-}
-
-.directory-grid section > * {
-  margin: 0.1rem;
-}
-
-.directory-grid h2 {
-  font-family: "Caveat", cursive;
-}
-
-.directory-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.directory-list section {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  margin: 0;
-  padding: 0.25rem;
-}
-
-.directory-list section > * {
-  margin: 0 1rem;
-}
-
-.directory-list section img {
-  display: none; /* smaller viewports only */
-}
-
-.directory-list section h2 {
-  font-size: 1rem;
-  font-family: Roboto, Helvetica, sans-serif;
-}
-
-.directory-list section:nth-child(even) {
-  background-color: #bed;
-}
-
-.directory-list img {
-  height: 75px;
-  max-width: 100%; /* Images are jerks - Seattle*/
-}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav-menu {
