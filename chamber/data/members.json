@@ -10,6 +10,51 @@
       "notes": "Financial Services company."
     },
     {
+      "name": "Benevity",
+      "address": "611 Meredith Rd NE #700, Calgary, AB T2E 2W5",
+      "phone": "+1(403)237-7875",
+      "url": "https://benevity.com/",
+      "image": "https://martechseries.com/wp-content/uploads/2022/01/Benevity-Releases-Its-Top-10-Charitable-Causes-Supported-by-Companies-and-Their-People-in-2021.jpg",
+      "membershipLevel": "Gold",
+      "notes": "Turn social impact into business impact."
+    },
+    {
+      "name": "Quorum Software",
+      "address": "250 2 St SW Suite 800, Calgary, AB T2P 0C1",
+      "phone": "+1(403)270-3270",
+      "url": "https://www.quorumsoftware.com/",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ee/57/b0/ee57b073-3f98-2994-1c20-8005d0b8f652/60944bbf-335f-4b8f-af71-6621fb9e1382_Simulator_Screen_Shot_-_iPad_Pro__U002812.9-inch_U0029__U00286th_generation_U0029_-_2023-03-20_at_17.17.45.png/643x0w.jpg",
+      "membershipLevel": "Gold",
+      "notes": "We are a leading provider of energy software worldwide."
+    },
+    {
+      "name": "Absorb Software",
+      "address": "685 Centre St S Suite 2500, Calgary, AB T2G 1S5",
+      "phone": "+1(403)717-1971",
+      "url": "https://www.absorblms.com/",
+      "image": "https://www.thesoftwarereport.com/wp-content/uploads/2020/02/0.jpeg",
+      "membershipLevel": "Gold",
+      "notes": "Absorb LMS is a learning management system built to accelerate learning and drive results."
+    },
+    {
+      "name": "Converge",
+      "address": "602 11 Ave SW #310, Calgary, AB T2R 1J8",
+      "phone": "+1(844)460-8540",
+      "url": "https://convverge.com/",
+      "image": "https://pbs.twimg.com/media/FSalBp_WUAE7y4P?format=jpg&name=large",
+      "membershipLevel": "Silver",
+      "notes": "We bring strategy, technology, and people together through digital business solutions."
+    },
+    {
+      "name": "Symend",
+      "address": "411 1 St SE #1700, Calgary, AB T2G 4Y5",
+      "phone": "+1(855)579-6363",
+      "url": "https://symend.com/",
+      "image": "https://cdn.betakit.com/wp-content/uploads/2020/05/Symend.jpeg",
+      "membershipLevel": "Silver",
+      "notes": "Founded in 2016, Symend is headquartered in Calgary and privately held, with global operations across Canada, the United States and Latin America."
+    },
+    {
       "name": "Summit Nanotech",
       "address": "2638 Country Hills Blvd NE #10, Calgary, AB T3N 1A7",
       "phone": "(403) 300-6266",
@@ -53,6 +98,15 @@
       "image": "https://scontent.fyyc7-1.fna.fbcdn.net/v/t39.30808-6/380811044_1103840817650634_7675300095489244462_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0wNNAHwNLW8AX8vhzI1&_nc_ht=scontent.fyyc7-1.fna&oh=00_AfAyDIfk0CwprgrhHHcgyr2cYntqg4z-IRV8zG6mHwFLig&oe=65507BD5",
       "membershipLevel": "Bronze",
       "notes": "Web & Mobile App Development that build digital products for growing businesses."
+    },
+    {
+      "name": "Sevenpro",
+      "address": "685 Centre St S Suite 2500, Calgary, AB T2G 1S5",
+      "phone": "+1(403)717-1971",
+      "url": "https://seven-pro.com/",
+      "image": "https://seven-pro.com/wp-content/themes/seven-pro/assets/img/preview.jpg",
+      "membershipLevel": "Gold",
+      "notes": "WE ARE A SOFTWARE DEVELOPMENT AND TECHNOLOGY CONSULTING COMPANY WHICH HELPS STARTUPS AND BUSINESSES TO TURN THEIR IDEAS INTO REALITY APPLYING OUR PROFESSIONAL EXPERTISE."
     }
   ]
 }
