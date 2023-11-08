@@ -527,17 +527,92 @@ main {
   font-family: Roboto, Helvetica, sans-serif;
 }
 
-.directory-menu {
-  margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
-  background-color: #bed;
-  text-align: center;
+/* directory.html */
+
+#directory-container a {
+  text-decoration: none;
+  color: var(--color-dark-blue);    
 }
 
-.directory-menu button {
-  padding: 1rem;
-  font-weight: 700;
+#directory-container section{ 
+  border-style:solid;
+  border-color: #666;
+  border-radius: 5px; 
+  padding: 40px;
+}
+
+#directory-container .directory-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: center ;
+  align-items: center;
+
+}
+
+#directory-container .directory-menu button {
+  padding: .5rem;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  font-family: var(--font1);
+  color: var(--color-dark-blue);
+  background-color: var(--color-orange);
+  border: 0px;
+  border-radius: 10px;
+}
+/* grid setting */
+
+#directory-container .directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 35px;
+  margin: 2rem;
+}
+
+#directory-container .directory-grid section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#directory-container .directory-grid img {
+  margin: 0 auto;  
+  width: 200px;
+  height: 200px;
+}
+
+/* list setting */
+
+#directory-container .directory-list {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#directory-container .directory-list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 35px;
+}
+
+#directory-container .directory-list img {
+  display: none;
+}
+
+#directory-container .directory-list section p:last-child {
+  display: none;
+}
+
+#directory-container .directory-list section p:nth-last-child(2) {
+  display: none;
+}
+
+#directory-container .directory-list section h2 {
+  font-size: 1rem;
+}
+
+#directory-container .directory-list section:nth-child(even) {
+  background-color: var(--color-grey)
 }
 
 /* Media query for smaller screens */

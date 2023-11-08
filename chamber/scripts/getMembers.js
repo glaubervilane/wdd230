@@ -1,6 +1,6 @@
 const baseURL = "https://glaubervilane.github.io/wdd230/chamber/";
 const dataURL = "https://glaubervilane.github.io/wdd230/chamber/data/members.json";
-const directory = document.querySelector('#directory-container .directory-grid');
+const directory = document.querySelector('.directory-grid');
 
 async function getMembers() {
   try {
@@ -21,8 +21,6 @@ async function getMembers() {
 }
 
 function displayMembers(companies) {
-  const directory = document.querySelector('#directory-container .directory-grid'); // Re-select the element
-
   companies.forEach((company) => {
     let section = document.createElement('section');
     let name = document.createElement('h2');
@@ -40,8 +38,6 @@ function displayMembers(companies) {
     url.textContent = `${company.name}`;
     image.setAttribute('src', company.image);
     image.setAttribute('alt', company.name);
-    image.style.width = '300px';
-    image.style.height = '300px';
     membershipLevel.textContent = `Membership Level: ${company.membershipLevel} Membership`;
     notes.textContent = `${company.notes}`;
 
