@@ -345,6 +345,11 @@ footer {
   padding: 20px;
 }
 
+.dark-mode #discovery-grid #sidebar-grid{
+  background-color: #000;
+  color: #fff;
+}
+
 /* Sidebar styles Discover page*/
 .sidebar {
   background-color: #f7b731;
@@ -371,6 +376,12 @@ footer {
 .main-content {
   background-color: #fff;
   padding: 20px;
+}
+
+.dark-mode .main-content{
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .image-gallery {
@@ -400,6 +411,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.dark-mode .form-container{
+  background-color: #000;
+  color: #fff;
 }
 
 /* Style the form area */
@@ -579,6 +595,8 @@ main {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  box-shadow: 0 0 10px #333;
+  border: 1px solid #fff;
 }
 
 #directory-container .directory-grid p {
@@ -617,6 +635,11 @@ main {
 
 #directory-container .directory-list section:nth-child(even) {
   background-color: var(--color-grey)
+}
+
+.dark-mode #directory-container{
+  background-color: #000;
+  color: #fff;
 }
 
 /* Media query for smaller screens */
