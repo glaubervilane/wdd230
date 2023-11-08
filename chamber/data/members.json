@@ -1,0 +1,31 @@
+{
+  "companys": [
+    {
+      "name": "Company 1",
+      "image": "company1.jpg",
+      "address": "123 Main St",
+      "phone": "123-456-7890",
+      "membershipLevel": "Gold",
+      "otherInfo": "Lorem ipsum dolor sit amet.",
+      "website": "https://www.example.com"
+    },
+    {
+      "name": "Company 2",
+      "image": "company2.jpg",
+      "address": "456 Elm St",
+      "phone": "987-654-3210",
+      "membershipLevel": "Silver",
+      "otherInfo": "Consectetur adipiscing elit.",
+      "website": "https://www.example2.com"
+    },
+    {
+      "name": "Company 3",
+      "image": "company3.jpg",
+      "address": "789 Oak St",
+      "phone": "555-123-4567",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "website": "https://www.example3.com"
+    }
+  ]
+}
