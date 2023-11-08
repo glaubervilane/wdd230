@@ -1,64 +1,71 @@
-const gridButton = document.querySelector("#grid");
-  const listButton = document.querySelector("#list");
-  const gridDisplay = document.querySelector(".grid");
-  const listDisplay = document.querySelector(".list");
+const baseURL = "https://glaubervilane.github.io/wdd230/chamber/";
+const dataURL = "https://glaubervilane.github.io/wdd230/chamber/data/members.json";
+const directory = document.querySelector('.directory-grid');
 
-  const dataURL = "https://glaubervilane.github.io/wdd230/chamber/data/members.json";
+async function getMembers() {
+  try {
+    const response = await fetch(dataURL);
+    if (!response.ok) {
+      throw new Error(`Error fetching data: ${response.statusText}`);
+    }
+    const data = await response.json();
 
-  let currentView = "grid";
-
-  // Load and display members based on the current view
-  function displayMembers(members) {
-    if (currentView === "grid") {
-      gridDisplay.innerHTML = "";
-      members.forEach((member) => {
-        const gridItem = document.createElement("section");
-        gridItem.innerHTML = `
-          <img src="${member.image}" alt="${member.name}" />
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <a href="${member.website}" target="_blank">Details</a>
-        `;
-        gridDisplay.appendChild(gridItem);
-      });
+    if (data.companies && Array.isArray(data.companies)) {
+      displayMembers(data.companies);
     } else {
-      listDisplay.innerHTML = "";
-      members.forEach((member) => {
-        const listItem = document.createElement("section");
-        listItem.innerHTML = `
-          <img src="${member.image}" alt="${member.name}" />
-          <h3>${member.name}</h3>
-          <p>Address: ${member.address}</p>
-          <p>Phone: ${member.phone}</p>
-          <p>Membership Level: ${member.membershipLevel}</p>
-          <p>${member.otherInfo}</p>
-          <a href="${member.website}" target="_blank">Details</a>
-        `;
-        listDisplay.appendChild(listItem);
-      });
+      throw new Error("Invalid data format: 'companies' array not found.");
     }
+  } catch (error) {
+    console.error("Error fetching data:", error);
   }
+}
 
-  async function getMembers() {
-    try {
-      const response = await fetch(dataURL);
-      const data = await response.json();
-      displayMembers(data.members);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  }
+function displayMembers(companies) {
+  companies.forEach((company) => {
+    let section = document.createElement('section');
+    let name = document.createElement('h2');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let url = document.createElement('a');
+    let image = document.createElement('img');
+    let membershipLevel = document.createElement('p');
+    let notes = document.createElement('p');
 
-  // Initial display
-  getMembers();
+    address.textContent = `Address: ${company.address}`;
+    phone.textContent = `Telephone: ${company.phone}`;
+    url.setAttribute('href', company.url);
+    url.setAttribute('target', "_blank");
+    url.textContent = `${company.name}`;
+    image.setAttribute('src', company.image);
+    image.setAttribute('alt', company.name);
+    membershipLevel.textContent = `Membership Level: ${company.membershipLevel} Membership`;
+    notes.textContent = `${company.notes}`;
 
-  // Event listeners for switching views
-  gridButton.addEventListener("click", () => {
-    currentView = "grid";
-    displayMembers(data.members);
+    name.appendChild(url);
+
+    section.appendChild(image);
+    section.appendChild(name);
+    section.appendChild(address);
+    section.appendChild(phone);
+    section.appendChild(membershipLevel);
+    section.appendChild(notes);
+
+    directory.appendChild(section);
   });
+}
 
-  listButton.addEventListener("click", () => {
-    currentView = "list";
-    displayMembers(data.members);
-  });
+getMembers();
+
+const gridBTN = document.querySelector('#directory-gridBTN');
+const listBTN = document.querySelector('#directory-listBTN');
+const display = document.querySelector('article');
+
+gridBTN.addEventListener('click', () => {
+  display.classList.add('directory-grid');
+  display.classList.remove('directory-list');
+});
+
+listBTN.addEventListener('click', () => {
+  display.classList.add('directory-list');
+  display.classList.remove('directory-grid');
+});
