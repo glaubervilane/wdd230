@@ -1,31 +1,58 @@
 {
   "companies": [
     {
-      "name": "Company 1",
-      "address": "123 Main St",
-      "phone": "123-456-7890",
-      "url": "https://www.example.com",
-      "image": "company1.jpg",
-      "membershipLevel": "Gold",
-      "notes": "Lorem ipsum dolor sit amet."
-    },
-    {
-      "name": "Company 2",
-      "address": "456 Elm St",
-      "phone": "987-654-3210",
-      "url": "https://www.example2.com",
-      "image": "company2.jpg",
-      "membershipLevel": "Silver",
-      "notes": "Consectetur adipiscing elit."
-    },
-    {
-      "name": "Company 3",
-      "address": "789 Oak St",
-      "phone": "555-123-4567",
-      "url": "https://www.example3.com",
-      "image": "company3.jpg",
+      "name": "Helcim",
+      "address": "440 2 Ave SW #400, Calgary, AB T2P 5E9",
+      "phone": "+1 877-643-5246",
+      "url": "https://www.helcim.com/",
+      "image": "https://www.helcim.com/images/automate-your-billing-and-make-more-money.jpg",
       "membershipLevel": "Bronze",
-      "notes": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "notes": "Financial Services company."
+    },
+    {
+      "name": "Summit Nanotech",
+      "address": "2638 Country Hills Blvd NE #10, Calgary, AB T3N 1A7",
+      "phone": "(403) 300-6266",
+      "url": "https://www.summitnanotech.com/",
+      "image": "https://assets-global.website-files.com/6436e302bacf770aa9081836/6436ef65fe5853b392c637ea_SN_logo_colour.png",
+      "membershipLevel": "Gold",
+      "notes": "Summit Nanotech is evolving today's lithium mines by extracting more high-purity lithium from natural resources faster and more sustainably to support the global electric vehicle (EV) demand."
+    },
+    {
+      "name": "Clinify Inc.",
+      "address": "5920 Macleod Trail SW #101, Calgary, AB T2H 0K2",
+      "phone": "(0700)254-6439",
+      "url": "https://www.myclinify.com/",
+      "image": "https://clinifyhealth.com/wp-content/uploads/2021/04/home-cover-image-e1619619608945.png",
+      "membershipLevel": "Silver",
+      "notes": "Driving operational efficiency in healthcare systems through automated processes."
+    },
+    {
+      "name": "Tallium, Inc",
+      "address": "100 - 111 5th Ave SW,",
+      "phone": "+1(403)879-9495",
+      "url": "https://tallium.com/",
+      "image": "https://tallium.com/assets/images/company/quickFacts.png",
+      "membershipLevel": "Silver",
+      "notes": "Web & Mobile App Development has been a core competence of the company since 2012."
+    },
+    {
+      "name": "Vog App Developers",
+      "address": "214 11 Ave SW Suite 900, Calgary, AB T2R 0K1",
+      "phone": "+1(844)992-2777",
+      "url": "https://vogappdevelopers.com/",
+      "image": "https://vogappdevelopers.com/wp-content/uploads/2023/06/about-vog-banner1.jpg",
+      "membershipLevel": "Silver",
+      "notes": "Web & Mobile App Development that build digital products for growing businesses."
+    },
+    {
+      "name": "Launchcode",
+      "address": "10504 42 St SE, Calgary, AB T2C 5B9",
+      "phone": "+1(844)992-2777",
+      "url": "https://vogappdevelopers.com/",
+      "image": "https://scontent.fyyc7-1.fna.fbcdn.net/v/t39.30808-6/380811044_1103840817650634_7675300095489244462_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0wNNAHwNLW8AX8vhzI1&_nc_ht=scontent.fyyc7-1.fna&oh=00_AfAyDIfk0CwprgrhHHcgyr2cYntqg4z-IRV8zG6mHwFLig&oe=65507BD5",
+      "membershipLevel": "Silver",
+      "notes": "Web & Mobile App Development that build digital products for growing businesses."
     }
   ]
 }
