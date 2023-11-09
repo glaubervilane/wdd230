@@ -305,6 +305,11 @@ footer {
   color: #fff;
 }
 
+.dark-mode .main-headings {
+  background-color: #fff;
+  color: #000;
+}
+
 .dark-mode .dark-footer {
   background-color: #fff;
   color: #000;
@@ -313,7 +318,8 @@ footer {
 
 /* Styles for the dark mode */
 .dark-mode .weather-card {
-  background-color: #1C4D72;
+  background-color: #fff;
+  color: #000;
 }
 
 .dark-mode .slider {
