@@ -9,7 +9,7 @@ const url = 'https://api.openweathermap.org/data/2.5/weather';
 // Define asynchronous function named "apiFetch()"
 async function apiFetch() {
   // Securely handle API key in a browser environment
-  const apiKey = window.env.WEATHER_API_KEY;
+  const apiKey = 'e890f6808ca6567333fbe9a956626fc9';
 
   // Ensure that the API key is provided
   if (!apiKey) {
