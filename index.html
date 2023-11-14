@@ -100,8 +100,8 @@
       <section class="card right-card">
         <h3>Information</h3>
         <p>Calgary, Alberta, Canada</p>
-        <p>☀️ <span id="temperature"></span>&deg; - Sunshine</p>
-        <p>Wind Speed: <span id="wind-speed">5.0</span> mph</p>
+        <p><img id="weather-icon" alt="Weather Icon"> <span id="temperature"></span>&deg; - <span id="weather-description"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
         <p id="wind-chill">Wind Chill: Calculating...</p>
         <p>Page Visits: <span class="visit-count"></span></p>
       </section><br>
@@ -120,6 +120,9 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
+  <script>
+    window.WEATHER_API_KEY = 'e890f6808ca6567333fbe9a956626fc9';
+  </script>  
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/getVisits.js"></script>
