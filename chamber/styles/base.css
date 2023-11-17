@@ -191,13 +191,36 @@ input:checked + .slider:before {
   padding: 20px;
 }
 
-/* Style the Weather Card Section */
+/* Styles the Weather Card Section */
 .weather-card {
   flex: 1;
   background-color: #ffcc00;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
+}
+
+/* Add a new rule for the forecast grid */
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+/* Style each forecast item */
+.forecast-item {
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Additional styling for better spacing */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast h3 {
+  margin-bottom: 10px;
 }
 
 /* Remove the flex-direction property to stack events vertically */
