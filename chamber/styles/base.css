@@ -183,6 +183,42 @@ input:checked + .slider:before {
   justify-content: space-between;
 }
 
+/* styles/banner.css */
+
+/* styles/banner.css */
+
+.meet-and-greet-banner {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f04e39;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.close-banner-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 /* Style the Current Event(s) Section (Make it Larger) */
 .current-events {
   flex: 2;
