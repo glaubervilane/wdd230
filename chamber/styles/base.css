@@ -40,6 +40,12 @@ header {
   list-style-type: none;
 }
 
+.nav-menu .current {
+  color: #ffd900;
+  font-weight: bold;
+}
+
+
 .search {
   display: flex;
   align-items: center;
