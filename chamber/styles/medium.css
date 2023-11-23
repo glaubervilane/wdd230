@@ -60,4 +60,19 @@
     flex: 1;
     margin: 10px;
   }
+
+  /* Cards take full width on small screens */
+  .spotlight-card {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Reset the order for mobile view */
+  #main-grid {
+    order: 2;
+  }
 }
