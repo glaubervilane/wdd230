@@ -118,25 +118,23 @@ button {
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #000;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #000;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
 .hero {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    ), url('../images/hero-image.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('../images/hero-image.png');
 
   background-size: cover;
   background-position: center;
@@ -291,7 +289,7 @@ input:checked + .slider:before {
 }
 
 .fun-fact {
-  padding:40px
+  padding: 40px
 }
 
 .articles {
@@ -414,7 +412,7 @@ footer {
   padding: 20px;
 }
 
-.dark-mode #discovery-grid #sidebar-grid{
+.dark-mode #discovery-grid #sidebar-grid {
   background-color: #000;
   color: #fff;
 }
@@ -447,7 +445,7 @@ footer {
   padding: 20px;
 }
 
-.dark-mode .main-content{
+.dark-mode .main-content {
   background-color: #000;
   color: #fff;
   border-radius: 10px;
@@ -457,9 +455,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
-  place-items: center; /* Center both horizontally and vertically */
+  place-items: center;
+  /* Center both horizontally and vertically */
   /* Lazy loading effect */
-  opacity: 0.7; /* Initial opacity */
+  opacity: 0.7;
+  /* Initial opacity */
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -485,10 +485,23 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border: solid #555;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.dark-mode .form-container{
+.dark-mode .dark-body{
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .form-container {
   display: flex;
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .info-div {
   background-color: #000;
   color: #fff;
 }
@@ -508,9 +521,54 @@ footer {
 }
 
 .info-div img {
-  width: 400px; 
-  height: auto; 
+  width: 400px;
+  height: auto;
   border-radius: 5px
+}
+
+/* Styles table benefits */
+/* Style the memberships table */
+.memberships-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style the table caption */
+.memberships-table caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the table header */
+.memberships-table th {
+  background-color: #1C4D72;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the highlighted cell */
+.memberships-table th#highlight {
+  background-color: #009933;
+}
+
+/* Style the table cells */
+.memberships-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Add hover effect to table rows */
+.memberships-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Add hover effect to table rows */
+.memberships-table tbody tr:hover {
+  background-color: #f5f5f5;
 }
 
 /* Style the form title */
@@ -635,13 +693,13 @@ main {
 
 #directory-container a {
   text-decoration: none;
-  color: var(--color-dark-blue);    
+  color: var(--color-dark-blue);
 }
 
-#directory-container section{ 
-  border-style:solid;
+#directory-container section {
+  border-style: solid;
   border-color: #666;
-  border-radius: 5px; 
+  border-radius: 5px;
   padding: 40px;
 }
 
@@ -649,7 +707,7 @@ main {
   display: flex;
   flex-direction: row;
   margin: 1rem;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
 
 }
@@ -664,6 +722,7 @@ main {
   border: 0px;
   border-radius: 10px;
 }
+
 /* grid setting */
 
 #directory-container .directory-grid {
@@ -680,7 +739,7 @@ main {
 
 
 #directory-container .directory-grid img {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -702,7 +761,7 @@ main {
 
 #directory-container .directory-list section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 35px;
 }
 
@@ -726,7 +785,7 @@ main {
   background-color: var(--color-grey)
 }
 
-.dark-mode #directory-container{
+.dark-mode #directory-container {
   background-color: #000;
   color: #fff;
 }
@@ -757,7 +816,7 @@ main {
     font-size: 24px;
     color: #fff;
   }
-  
+
   /* Hamburger Menu Styles */
   .hamburger {
     display: block;
@@ -785,7 +844,7 @@ main {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  
+
   .search-field {
     max-width: 100px;
   }
@@ -841,7 +900,7 @@ main {
   .image-gallery img {
     transform: none;
   }
-  
+
   .form-container {
     flex-direction: column;
   }
