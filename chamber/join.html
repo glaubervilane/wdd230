@@ -67,6 +67,8 @@
 
   <main>
 
+    
+    <div class="content-container">
     <form action="thankyou.html" method="get">
       <div class="form-container">
         <div class="form-area">
@@ -91,21 +93,26 @@
 
           <label for="description" class="form-label">Business/Organization Description:</label>
           <textarea id="description" name="description" class="form-textarea" rows="5"></textarea>
-
+          
+          <div class="benefits-area">
+            <label for="membershipLevel" class="form-label">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" class="form-input">
+              <option value="NP">NP Membership (No Fee)</option>
+              <option value="Bronze">Bronze Membership</option>
+              <option value="Silver">Silver Membership</option>
+              <option value="Gold">Gold Membership</option>
+            </select>
+          </div>
           <input type="hidden" id="timestamp" name="timestamp">
           <button type="submit" class="form-button">Submit Application</button>
         </div>
-        <div class="benefits-area">
-          <label for="membershipLevel" class="form-label">Membership Level:</label>
-          <select id="membershipLevel" name="membershipLevel" class="form-input">
-            <option value="NP">NP Membership (No Fee)</option>
-            <option value="Bronze">Bronze Membership</option>
-            <option value="Silver">Silver Membership</option>
-            <option value="Gold">Gold Membership</option>
-          </select>
-        </div>
       </div>
     </form>
+    <div class="info-div">
+      <h2>Fill this form and choose a memembership today</h2>
+      <img src="./images/join-us.jpg" alt="Join us" />
+    </div>
+  </div>
   </main>
 
   <footer>

@@ -191,8 +191,6 @@ input:checked + .slider:before {
 
 /* styles/banner.css */
 
-/* styles/banner.css */
-
 .meet-and-greet-banner {
   display: none;
   position: relative;
@@ -478,6 +476,11 @@ footer {
 }
 
 /* Style the form container */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form-container {
   display: flex;
   justify-content: space-between;
@@ -485,6 +488,7 @@ footer {
 }
 
 .dark-mode .form-container{
+  display: flex;
   background-color: #000;
   color: #fff;
 }
@@ -493,6 +497,20 @@ footer {
 .form-area {
   flex: 1;
   padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Style the info div */
+.info-div {
+  flex: 1;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.info-div img {
+  width: 400px; 
+  height: auto; 
+  border-radius: 5px
 }
 
 /* Style the form title */
@@ -826,6 +844,14 @@ main {
   
   .form-container {
     flex-direction: column;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .info-div {
+    margin-top: 0;
   }
 
   .benefits-area {
