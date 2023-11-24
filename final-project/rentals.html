@@ -26,6 +26,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -33,7 +34,22 @@
 
 <body>
   <header>
-    <!-- TODO: Add header content here -->
+    <div class="header-container">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+      </a>
+      <div class="topnav" id="myTopnav">
+        <br>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"> </i>Contact</a>
+        <a href="./reservations.html"><i class="fa fa-fw fa-vcard-o"> </i>Reservations</a>
+        <a href="./rentals.html" class="active"><i class="fa fa-fw fa-key"></i> Rentals</a>
+        <a href="./index.html"><i class="fa fa-fw fa-home"> </i>Home</a>
+        <br>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -45,25 +61,25 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="impressive-footer">
     <div class="footer-container">
-      <div class="footer-section">
+      <div class="footer-section about-scoots">
         <h3>About Scoots</h3>
         <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island
           with ease and style.</p>
       </div>
 
-      <div class="footer-section">
+      <div class="footer-section quick-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#rentals">Rentals</a></li>
-          <li><a href="#reservations">Reservations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./rentals.html">Rentals</a></li>
+          <li><a href="./reservations.html">Reservations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
+      <div class="footer-section contact-us">
         <h3>Contact Us</h3>
         <p>Address: 10a Avenida Sur, Cozumel, Mexico</p>
         <p>Email: info@scootscozumel.com</p>
@@ -74,7 +90,7 @@
     <div class="footer-social">
       <h3>Follow Us</h3>
       <div class="social-icons">
-        <!-- Add your social media icons and links here -->
+        <!-- Add social media icons and links here -->
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
@@ -82,7 +98,7 @@
     </div>
   </footer>
 
-  <!-- TODO: Add scripts here -->
+  <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
