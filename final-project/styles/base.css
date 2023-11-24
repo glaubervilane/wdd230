@@ -10,6 +10,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 150px;
 }
 
 .logo {
