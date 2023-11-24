@@ -27,6 +27,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -34,7 +35,22 @@
 
 <body>
   <header>
-    <!-- TODO: Add header content here -->
+    <div class="header-container">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+      </a>
+      <div class="topnav" id="myTopnav">
+        <br>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"> </i>Contact</a>
+        <a href="./reservations.html"><i class="fa fa-fw fa-vcard-o"> </i>Reservations</a>
+        <a href="./rentals.html"><i class="fa fa-fw fa-key"></i> Rentals</a>
+        <a href="./index.html" class="active"><i class="fa fa-fw fa-home"> </i>Home</a>
+        <br>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -82,7 +98,7 @@
     </div>
   </footer>
 
-  <!-- TODO: Add scripts here -->
+  <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
