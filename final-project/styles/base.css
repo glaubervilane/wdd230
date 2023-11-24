@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 130px;
 }
 
 .logo {
@@ -51,6 +51,66 @@ main {
 
 .topnav .icon {
   display: none;
+}
+
+/*********************** Styles Main CSS ********************/
+
+.home{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+
+.home:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+
+.home:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+    scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(https://images.pexels.com/photos/349453/pexels-photo-349453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) 80% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+.info{
+  flex: 0 0 auto;
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+
+@keyframes grow{
+  0% { transform: scale(1) translateY(0px)}
+  50% { transform: scale(1.2) translateY(-400px)}
 }
 
 /*********************** Styles Footer CSS ********************/
@@ -143,5 +203,9 @@ main {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .home:before{
+    background:#1B2030
   }
 }
