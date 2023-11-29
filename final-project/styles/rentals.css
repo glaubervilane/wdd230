@@ -1,0 +1,28 @@
+/* Styles for the rentals page */
+.rentals-banner {
+  background-image: url(https://images.pexels.com/photos/349453/pexels-photo-349453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-color: #f4f4f4;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rentals-hero-banner h1,
+.rentals-hero-banner h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.rentals-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.rentals-card p {
+  margin-bottom: 10px;
+}
