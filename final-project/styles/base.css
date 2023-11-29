@@ -170,12 +170,14 @@ h2 {
 
 .about-section,
 .scooter-experience-section,
-.orientation-section {
+.orientation-section,
+.faq-weather {
   background-color: #f4f4f4;
   padding: 40px 20px;
 }
 
-.section-content {
+.section-content,
+.section-faq-content {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -311,6 +313,27 @@ h2 {
     border-radius: 0 8px 8px 0;
     background-color: #c4dbed;
   }
+}
+
+.section-faq-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  flex: 0 0 50%;
+  background-color: #c4dbed;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Weather Card Styles */
+.weather-card {
+  flex: 0 0 40%;
+  border-radius: 0 8px 8px 0;
+  border: solid #c4dbed;
+  padding: 15px;
 }
 
 /*****Styles fro Google Map Section *****/
