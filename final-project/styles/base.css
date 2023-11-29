@@ -170,8 +170,7 @@ h2 {
 
 .about-section,
 .scooter-experience-section,
-.orientation-section,
-.faq-weather {
+.orientation-section {
   background-color: #f4f4f4;
   padding: 40px 20px;
 }
@@ -324,15 +323,22 @@ h2 {
   border-radius: 8px 0 0 8px;
 }
 
+.faq-weather {
+  background-color: #e2e2e2;
+  padding: 40px 20px;
+}
+
 /* Weather Card Styles */
 .weather-card {
+  text-align: center;
   flex: 0 0 40%;
   border: solid #c4dbed;
   padding: 20px;
   border-radius: 0 8px 8px 0;
+  background-color: #fff;
 }
 
-@media screen and (max-width: 914px) { 
+@media screen and (max-width: 914px) {
   .weather-card {
     flex: 0 0 49.3%;
     border: solid #c4dbed;
@@ -342,6 +348,25 @@ h2 {
   .faq-section {
     border-radius: 0;
   }
+}
+
+.forecast h3 {
+  text-align: center;
+}
+
+/* Style the forecast container */
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Style each forecast item */
+.forecast-item {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 15px;
 }
 
 /*****Styles fro Google Map Section *****/
@@ -513,9 +538,13 @@ h2 {
   .faq-section {
     border-radius: 8px 8px 0 0;
   }
-  
+
   .weather-card {
     border-radius: 0 0 8px 8px;
     margin-right: 3%;
+  }
+
+  .forecast-item {
+    width: 100%;
   }
 }

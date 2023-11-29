@@ -4,11 +4,14 @@ const windSpeedSpan = document.querySelector('#wind-speed');
 const windChillSpan = document.querySelector('#wind-chill');
 const forecastContainer = document.getElementById('forecast-container');
 
-// Declare URL variable
-const url = 'https://api.openweathermap.org/data/2.5/forecast';
+// Declare URL variable for current weather
+const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-// Define asynchronous function named "apiFetch()"
-async function apiFetch() {
+// Declare URL variable for 3-day forecast
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast';
+
+// Define asynchronous function named "apiFetch()" for current weather
+async function apiFetchCurrentWeather() {
   // Securely handle API key in a browser environment
   const apiKey = 'e890f6808ca6567333fbe9a956626fc9';
 
@@ -20,14 +23,14 @@ async function apiFetch() {
 
   const city = 'Cozumel';
   const countryCode = 'MX';
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${apiKey}&units=imperial`;
+  const url = `${currentWeatherUrl}?q=${city},${countryCode}&appid=${apiKey}&units=imperial`;
 
   try {
     const response = await fetch(url);
 
     if (response.ok) {
       const data = await response.json();
-      displayResults(data);
+      displayCurrentWeather(data);
     } else {
       throw Error(await response.text());
     }
@@ -36,11 +39,41 @@ async function apiFetch() {
   }
 }
 
-// Invoke the apiFetch() function
-apiFetch();
+// Define asynchronous function named "apiFetch()" for 3-day forecast
+async function apiFetchForecast() {
+  // Securely handle API key in a browser environment
+  const apiKey = 'e890f6808ca6567333fbe9a956626fc9';
 
-// Build the displayResults function
-function displayResults(data) {
+  // Ensure that the API key is provided
+  if (!apiKey) {
+    console.error("API Key is missing.");
+    return;
+  }
+
+  const city = 'Cozumel';
+  const countryCode = 'MX';
+  const url = `${forecastUrl}?q=${city},${countryCode}&appid=${apiKey}&units=imperial`;
+
+  try {
+    const response = await fetch(url);
+
+    if (response.ok) {
+      const data = await response.json();
+      displayForecast(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// Invoke the apiFetch() functions
+apiFetchCurrentWeather();
+apiFetchForecast();
+
+// Build the displayCurrentWeather function
+function displayCurrentWeather(data) {
   // Check if data.weather is defined and has at least one item
   if (data.weather && data.weather.length > 0) {
     // Display temperature in Fahrenheit
@@ -52,7 +85,7 @@ function displayResults(data) {
     // Set weather icon and description
     const weatherIcon = document.getElementById('weather-icon');
     const weatherDescription = document.getElementById('weather-description');
-    
+
     // Check if the first item in data.weather has the expected properties
     if (data.weather[0].icon && data.weather[0].description) {
       weatherIcon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -60,7 +93,8 @@ function displayResults(data) {
       weatherDescription.innerHTML = data.weather[0].description;
     } else {
       // Handle the case where the properties are missing
-      weatherIcon.src = ''; // Clear the image
+      // Clear the image
+      weatherIcon.src = '';
       weatherIcon.alt = 'Weather Icon';
       weatherDescription.innerHTML = 'Weather Description N/A';
     }
@@ -77,9 +111,54 @@ function displayResults(data) {
   } else {
     // Handle the case where data.weather is missing or empty
     console.error('Invalid or empty data.weather:', data.weather);
+  }
+}
+
+function displayForecast(data) {
+  // Check if data.list is defined and has at least one item
+  if (data.list && data.list.length > 0) {
+    // Clear previous forecast content
+    forecastContainer.innerHTML = '';
+
+    // Loop through the forecast data (for the next 3 days)
+    for (let i = 0; i < 3; i++) {
+      // Use i * 8 to get once per day
+      const forecastItem = data.list[i * 8];
+
+      // Create elements for each forecast item
+      const forecastItemDiv = document.createElement('div');
+      forecastItemDiv.classList.add('forecast-item');
+
+      const dateParagraph = document.createElement('p');
+      const temperatureParagraph = document.createElement('p');
+      const weatherIconImg = document.createElement('img');
+
+      // Format date and temperature
+      const date = new Date(forecastItem.dt_txt);
+      const formattedDate = date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+      const temperature = forecastItem.main.temp.toFixed(2);
+
+      // Set content and attributes
+      dateParagraph.textContent = formattedDate;
+      temperatureParagraph.innerHTML = `${temperature}&deg;F`;
+      weatherIconImg.src = `https://openweathermap.org/img/w/${forecastItem.weather[0].icon}.png`;
+      weatherIconImg.alt = forecastItem.weather[0].description;
+
+      // Append elements to the forecast item container
+      forecastItemDiv.appendChild(dateParagraph);
+      forecastItemDiv.appendChild(weatherIconImg);
+      forecastItemDiv.appendChild(temperatureParagraph);
+
+      // Append the forecast item container to the forecast container
+      forecastContainer.appendChild(forecastItemDiv);
+    }
+  } else {
+    // Handle the case where data.list is missing or empty
+    console.error('Invalid or empty data.list:', data.list);
     // You might want to provide default values or display an error message
   }
 }
+
 
 // Function to calculate wind chill
 function calculateWindChill(temperatureFahrenheit, windSpeedMPH) {
