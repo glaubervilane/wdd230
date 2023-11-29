@@ -122,40 +122,46 @@
         <h2>There is a lot to see!</h2>
         <div class="gallery-container">
           <!-- Image 1 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter1.jpg')">
             <img src="./images/scooter1.jpg" alt="Gallery Image 1">
           </div>
           <!-- Image 2 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter2.jpg')">
             <img src="./images/scooter2.jpg" alt="Gallery Image 2">
           </div>
           <!-- Image 3 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter3.jpg')">
             <img src="./images/scooter3.jpg" alt="Gallery Image 3">
           </div>
           <!-- Image 4 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter4.jpg')">
             <img src="./images/scooter4.jpg" alt="Gallery Image 4">
           </div>
           <!-- Image 5 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter5.jpg')">
             <img src="./images/scooter5.jpg" alt="Gallery Image 5">
           </div>
           <!-- Image 6 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter6.jpg')">
             <img src="./images/scooter6.jpg" alt="Gallery Image 6">
           </div>
           <!-- Image 7 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter7.jpg')">
             <img src="./images/scooter7.jpg" alt="Gallery Image 7">
           </div>
           <!-- Image 8 -->
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openModal('./images/scooter8.jpg')">
             <img src="./images/scooter8.jpg" alt="Gallery Image 8">
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
 
     <!-- Scooter Orientation Section -->
     <section class="orientation-section">
@@ -225,6 +231,7 @@
   </footer>
 
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 
 </html>
