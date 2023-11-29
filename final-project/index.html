@@ -122,9 +122,16 @@
         <div class="weather-card">
           <!-- Add your weather information content here -->
           <h3>Weather Information</h3>
-          <p>Current Weather: Sunny</p>
-          <p>Temperature: 28°C</p>
-          <!-- Add more weather details as needed -->
+          <p>Cozumel, Mexico</p>
+          <p><img id="weather-icon" alt="Weather Icon"> <span id="temperature"></span>&deg; - <span
+              id="weather-description"></span></p>
+          <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+          <p id="wind-chill">Wind Chill: Calculating...</p>
+          <div class="forecast">
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-container" class="forecast-grid">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -245,6 +252,7 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/modal.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>

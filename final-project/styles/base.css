@@ -209,11 +209,6 @@ h2 {
   padding: 60px 0;
 }
 
-.section-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -317,6 +312,7 @@ h2 {
 
 .section-faq-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -331,9 +327,21 @@ h2 {
 /* Weather Card Styles */
 .weather-card {
   flex: 0 0 40%;
-  border-radius: 0 8px 8px 0;
   border: solid #c4dbed;
-  padding: 15px;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+@media screen and (max-width: 914px) { 
+  .weather-card {
+    flex: 0 0 49.3%;
+    border: solid #c4dbed;
+    border-radius: 0;
+  }
+
+  .faq-section {
+    border-radius: 0;
+  }
 }
 
 /*****Styles fro Google Map Section *****/
@@ -500,5 +508,14 @@ h2 {
   .card {
     flex: 0 0 100%;
     margin-bottom: 20px;
+  }
+
+  .faq-section {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .weather-card {
+    border-radius: 0 0 8px 8px;
+    margin-right: 3%;
   }
 }
