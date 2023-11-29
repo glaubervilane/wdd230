@@ -103,10 +103,11 @@ function displayCurrentWeather(data) {
     const windChillValue = calculateWindChill(data.main.temp, data.wind.speed);
 
     // Display wind chill or "N/A"
-    if (data.main.temp <= 50 && data.wind.speed > 3.0) {
-      windChillSpan.innerHTML = `Wind Chill: ${windChillValue.toFixed(2)}&deg;F`;
+    const windChillParagraph = document.getElementById('wind-chill');
+    if (!isNaN(windChillValue)) {
+      windChillParagraph.innerHTML = `Wind Chill: ${windChillValue.toFixed(2)}&deg;F`;
     } else {
-      windChillSpan.innerHTML = 'Wind Chill: N/A';
+      windChillParagraph.innerHTML = 'Wind Chill: N/A';
     }
   } else {
     // Handle the case where data.weather is missing or empty
