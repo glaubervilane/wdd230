@@ -345,8 +345,14 @@ h2 {
     border-radius: 0;
   }
 
+  .section-faq-content {
+    width: 100%;
+    padding-left: 20%;
+  }
+
   .faq-section {
     border-radius: 0;
+    align-items: center;
   }
 }
 
@@ -367,6 +373,28 @@ h2 {
   text-align: center;
   width: 30%;
   margin-bottom: 15px;
+}
+
+/* Styles for the Rentals Summary section */
+.rentals-summary {
+  padding: 40px 12%;
+}
+
+.rentals-summary h2 {
+  color: #333; /* Adjust the text color as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.rentals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.rentals-table th, .rentals-table td {
+  border: 1px solid #ddd; /* Adjust the border color as needed */
+  padding: 12px;
+  text-align: left;
 }
 
 /*****Styles fro Google Map Section *****/
@@ -533,6 +561,10 @@ h2 {
   .card {
     flex: 0 0 100%;
     margin-bottom: 20px;
+  }
+
+  .section-faq-content {
+    width: 100%;
   }
 
   .faq-section {
