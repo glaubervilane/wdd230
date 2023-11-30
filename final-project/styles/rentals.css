@@ -1,8 +1,10 @@
 /* Styles for the rentals page */
 .rentals-banner {
-  background-image: url(https://images.pexels.com/photos/349453/pexels-photo-349453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url("../images/banner-rentals.png");
+  background-size: 1200px;
   background-color: #f4f4f4;
   padding: 100px;
+  padding-bottom: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,4 +27,20 @@
 
 .rentals-card p {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .rentals-banner {
+    background-size: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .rentals-hero-banner h1 {
+    font-size: 18px;
+  }
+
+  .rentals-hero-banner h2 {
+    font-size: 15px;
+  }
 }
