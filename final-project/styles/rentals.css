@@ -1,7 +1,9 @@
 /* Styles for the rentals page */
 .rentals-banner {
   background-image: url("../images/banner-rentals.png");
-  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #f4f4f4;
   padding: 100px;
   padding-bottom: 250px;
@@ -32,6 +34,7 @@
 @media screen and (max-width: 600px) {
   .rentals-banner {
     background-size: 500px;
+    background-repeat:repeat;
     margin-top: 20px;
     padding: 20px;
     padding-bottom: 50px;
@@ -41,6 +44,6 @@
   }
 
   .rentals-hero-banner h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
