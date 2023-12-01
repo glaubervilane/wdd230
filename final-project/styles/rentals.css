@@ -33,12 +33,14 @@
 
 /* Styles for the Max Rental Pricing section */
 .max-rental-pricing {
-  padding: 50px; /* Adjust the padding as needed */
+  padding: 30px;
+  text-align: center;
 }
 
 .max-rental-pricing h2 {
-  color: #333; /* Adjust the text color as needed */
-  margin-bottom: 20px; /* Adjust the margin as needed */
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 /* Styles for the pricing table */
@@ -51,12 +53,22 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table th, .pricing-table td {
-  border: 1px solid #ddd; /* Adjust the border color as needed */
-  padding: 12px;
-  text-align: left;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.pricing-table th {
+  background-color: #f2f2f2;
+}
+
+/* Add some hover effect to table rows */
+.pricing-table tbody tr:hover {
+  background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 600px) {
@@ -73,5 +85,14 @@
 
   .rentals-hero-banner h2 {
     font-size: 12px;
+  }
+
+  .max-rental-pricing { 
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  .pricing-table th, .pricing-table td {
+    padding: 5px;
   }
 }

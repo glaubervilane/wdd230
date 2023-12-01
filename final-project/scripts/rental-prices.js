@@ -22,6 +22,8 @@ async function getPrices() {
 function displayPrices(rentals) {
   // Display the rental prices in a table in the 'pricing-table-container' div
   let table = document.createElement('table');
+  table.classList.add('pricing-table'); // Add the 'pricing-table' class
+
   let thead = document.createElement('thead');
   let tbody = document.createElement('tbody');
 
