@@ -54,18 +54,4 @@ function displayMembers(companies) {
   });
 }
 
-getMembers();
-
-const gridBTN = document.querySelector('#directory-gridBTN');
-const listBTN = document.querySelector('#directory-listBTN');
-const display = document.querySelector('article');
-
-gridBTN.addEventListener('click', () => {
-  display.classList.add('directory-grid');
-  display.classList.remove('directory-list');
-});
-
-listBTN.addEventListener('click', () => {
-  display.classList.add('directory-list');
-  display.classList.remove('directory-grid');
-});
+getPrices();

@@ -14,7 +14,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: background 0.4s ease-in-out;
 }
 
 main {
@@ -149,11 +148,6 @@ main {
   padding: 15% 10% 0 10%;
   text-align: center;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
-}
-
-.hero-banner h1,
-h2 {
-  padding-right: 50px;
 }
 
 @keyframes grow {
@@ -339,6 +333,7 @@ h2 {
 }
 
 @media screen and (max-width: 914px) {
+
   .weather-card {
     flex: 0 0 49.3%;
     border: solid #c4dbed;
@@ -420,7 +415,7 @@ h2 {
 .impressive-footer {
   background-color: #144d89;
   color: #fff;
-  padding: 40px 20px;
+  padding: 40px 20px; 
 }
 
 .footer-container {
