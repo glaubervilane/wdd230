@@ -27,7 +27,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/home.css">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -35,30 +35,229 @@
 
 <body>
   <header>
-    <nav class="navbar">     
-      <div class="logo">     
-        <a href="./index.html">
-          <img src="./images/logo.png" alt="Scoots Logo">
-        </a>
-      </div>    
+    <div class="header-container">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+      </a>
       <div class="topnav" id="myTopnav">
-        <a class="placeholder" href=""></a>
+        <br>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"> </i>Contact</a>
+        <a href="./reservations.html"><i class="fa fa-fw fa-vcard-o"> </i>Reservations</a>
         <a href="./rentals.html"><i class="fa fa-fw fa-key"></i> Rentals</a>
-        <a href="./reservations.html"><i class="fa fa-fw fa-vcard-o"></i> Reservations</a>
-        <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="./index.html" class="active"><i class="fa fa-fw fa-home"> </i>Home</a>
+        <br>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="./index.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
       </div>
-    </nav>
-  </header>  
+    </div>
+  </header>
 
   <main>
-    <section id="home">
-      <!-- Home page content -->
-      <h1>Welcome to ~Scoots~</h1>
-      <!-- TODO: Add more content as needed -->
+    <section class="banner">
+      <div class="hero-banner">
+        <h1>ESCAPE AND EXPLORE WITH SCOOTS</h1>
+        <h2>YOUR PASSPORT TO ISLAND FREEDOM!</h2>
+        <a href="./reservations.html" class="btn-main">Make a Reservation</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="section-content">
+        <h2>ABOUT US</h2>
+        <p>A Plus Registry Services is a licensed and authorized Government of Cozumel Registry agent suited for all of
+          your licensing needs in Mexico. We are located in Cozumel's 10a Avenida Sur.</p>
+        <p>Services may be paid by cheques, debit cards, Visa, Mastercard, PayPal, or an A-Plus Preferred Customer
+          Account.</p>
+        <p>Our Managerial staff has over 75 years of Registry experience and are on hand to help you with your Registry
+          needs. Courteous and experienced is the A-Plus Registry way. A-Plus Registry can serve you in person, by fax,
+          by mail, by email and now offers Online Registry Services so you don't have to leave your home to get what you
+          need!</p>
+        <div class="cta-buttons">
+          <a href="./contact.html" class="btn-main">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scooter Experience Section -->
+    <section class="scooter-experience-section">
+      <div class="section-content">
+        <h2>The best scooter experience in Cozumel!</h2>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <h3><i class="fa fa-fw fa-bolt"></i> New Fleet of Scooters!</h3>
+            <p>We have a fleet of new scooters just waiting for you! All our scooters are 49cc, gas powered and fully
+              automatic. Our prices include helmet, lock, and gas.</p>
+            <a href="./rentals.html" class="btn-card">Rentals</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <h3><i class="fa fa-fw fa-universal-access"></i> Mobility Scooters</h3>
+            <p>Explore Cozumel with our mobility scooter rental services. Rent a comfortable and reliable scooter today
+              and explore amazing attractions and scenery hassle-free!</p>
+            <a href="./rentals.html" class="btn-card">Learn More</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <h3><i class="fa fa-fw fa-heart"></i> Majestic Rides!</h3>
+            <p>Ride through the majestic coasts at your own pace! Visit scenic spots and iconic landmarks.</p>
+            <a href="#gallery" class="btn-card">View Gallery</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-weather">
+      <div class="section-faq-content">
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h3>Frequently Asked Questions</h3>
+          <p>Check out all of the most common questions we get from our customers. We strive to exceed expectations to
+            ensure you get the most enjoyment on your visit.</p>
+          <a href="#" class="btn-main">View Our FAQ's</a>
+        </div>
+        <!-- Weather Card (Right Side) -->
+        <div class="weather-card">
+          <!-- Add your weather information content here -->
+          <h3>Weather Information</h3>
+          <p>Cozumel, Mexico</p>
+          <p><img id="weather-icon" alt="Weather Icon"> <span id="temperature"></span>&deg; - <span
+              id="weather-description"></span></p>
+          <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+          <p id="wind-chill">Wind Chill: Calculating...</p>
+          <div class="forecast">
+            <h3>Forecast</h3>
+            <div id="forecast-container" class="forecast-grid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rentals-summary">
+      <h2>Types of Rentals</h2>
+
+      <!-- Stylish table to display rental information -->
+      <table class="rentals-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Model</th>
+            <th>Capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Honda Motor Scooters -->
+          <tr>
+            <td rowspan="3">Honda Motor Scooters</td>
+            <td>Honda Metropolitan (49cc)</td>
+            <td>1 person</td>
+          </tr>
+          <tr>
+            <td>Honda Dio (110cc)</td>
+            <td>2 person</td>
+          </tr>
+          <tr>
+            <td>Honda PCX150 (149cc)</td>
+            <td>2 person</td>
+          </tr>
+
+          <!-- Side-by-Side ATVs -->
+          <tr>
+            <td rowspan="1">Side-by-Side ATVs</td>
+            <td>Honda Pioneer 1000</td>
+            <td>4 person</td>
+          </tr>
+
+          <!-- Jeeps -->
+          <tr>
+            <td rowspan="2">Jeeps</td>
+            <td>Jeep Wrangler - 4 door manuel with A/C</td>
+            <td>5 person</td>
+          </tr>
+          <tr>
+            <td>Jeep Wrangler - 2 door - open air - manuel</td>
+            <td>4 person</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-content">
+        <h2>There is a lot to see!</h2>
+        <div class="gallery-container">
+          <!-- Image 1 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter1.jpg')">
+            <img src="./images/scooter1.jpg" alt="Gallery Image 1">
+          </div>
+          <!-- Image 2 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter2.jpg')">
+            <img src="./images/scooter2.jpg" alt="Gallery Image 2">
+          </div>
+          <!-- Image 3 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter3.jpg')">
+            <img src="./images/scooter3.jpg" alt="Gallery Image 3">
+          </div>
+          <!-- Image 4 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter4.jpg')">
+            <img src="./images/scooter4.jpg" alt="Gallery Image 4">
+          </div>
+          <!-- Image 5 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter5.jpg')">
+            <img src="./images/scooter5.jpg" alt="Gallery Image 5">
+          </div>
+          <!-- Image 6 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter6.jpg')">
+            <img src="./images/scooter6.jpg" alt="Gallery Image 6">
+          </div>
+          <!-- Image 7 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter7.jpg')">
+            <img src="./images/scooter7.jpg" alt="Gallery Image 7">
+          </div>
+          <!-- Image 8 -->
+          <div class="gallery-item" onclick="openModal('./images/scooter8.jpg')">
+            <img src="./images/scooter8.jpg" alt="Gallery Image 8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Scooter Orientation Section -->
+    <section class="orientation-section">
+      <div class="section-content">
+        <div class="orientation-content">
+          <div class="orientation-image"></div>
+          <div class="orientation-text">
+            <h2>Scooter Orientation</h2>
+            <p>Renting a scooter in Cozumel can be a fun and efficient way to explore the area. Before hitting the road,
+              it’s important to receive proper training. Our friendly staff will provide a lesson when you rent a
+              scooter
+              to ensure you have full confidence before you hit the road! Enjoy the ride!</p>
+            <a href="#" class="btn-main">Frequently Asked Questions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="google-map-section">
+      <div class="section-content">
+        <h2>Find Us on the Map</h2>
+        <iframe width="100%" height="400" frameborder="0" style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377236.3166896664!2d-87.02319472718616!3d20.423721244956613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e548c59c48a4d%3A0x843776f20f5edf27!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sca!4v1695649224753!5m2!1sen!2sca"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
   </main>
 
@@ -66,9 +265,11 @@
     <div class="footer-container">
       <div class="footer-section about-scoots">
         <h3>About Scoots</h3>
-        <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island with ease and style.</p>
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+        <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island
+          with ease and style.</p>
       </div>
-  
+
       <div class="footer-section quick-links">
         <h3>Quick Links</h3>
         <ul>
@@ -78,7 +279,7 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-section contact-us">
         <h3>Contact Us</h3>
         <p>Address: 10a Avenida Sur, Cozumel, Mexico</p>
@@ -99,6 +300,8 @@
   </footer>
 
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>

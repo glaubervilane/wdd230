@@ -26,7 +26,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/home.css">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -34,24 +34,23 @@
 
 <body>
   <header>
-    <nav class="navbar">     
-      <div class="logo">     
-        <a href="./index.html">
-          <img src="./images/logo.png" alt="Scoots Logo">
-        </a>
-      </div>    
+    <div class="header-container">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+      </a>
       <div class="topnav" id="myTopnav">
-        <a class="placeholder" href=""></a>
+        <br>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"> </i>Contact</a>
+        <a href="./reservations.html" class="active"><i class="fa fa-fw fa-vcard-o"> </i>Reservations</a>
         <a href="./rentals.html"><i class="fa fa-fw fa-key"></i> Rentals</a>
-        <a href="./reservations.html" class="active"><i class="fa fa-fw fa-vcard-o"></i> Reservations</a>
-        <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="./index.html"><i class="fa fa-fw fa-home"> </i>Home</a>
+        <br>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a>
       </div>
-    </nav>
-  </header> 
+    </div>
+  </header>
 
   <main>
     <section id="reservations">
@@ -64,10 +63,12 @@
   <footer class="impressive-footer">
     <div class="footer-container">
       <div class="footer-section about-scoots">
-        <h3>About Scoots</h3>
-        <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island with ease and style.</p>
+        <h3>About Scoots</h3>       
+        <img src="./images/logo.png" alt="Scoots Logo" class="logo">
+        <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island
+          with ease and style.</p>
       </div>
-  
+
       <div class="footer-section quick-links">
         <h3>Quick Links</h3>
         <ul>
@@ -77,7 +78,7 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-section contact-us">
         <h3>Contact Us</h3>
         <p>Address: 10a Avenida Sur, Cozumel, Mexico</p>

@@ -1,0 +1,77 @@
+/* Styles for the rentals page */
+.rentals-banner {
+  background-image: url("../images/banner-rentals.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #f4f4f4;
+  padding: 100px;
+  padding-bottom: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rentals-hero-banner h1,
+.rentals-hero-banner h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.rentals-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.rentals-card p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the Max Rental Pricing section */
+.max-rental-pricing {
+  padding: 50px; /* Adjust the padding as needed */
+}
+
+.max-rental-pricing h2 {
+  color: #333; /* Adjust the text color as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Styles for the pricing table */
+#pricing-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pricing-table th, .pricing-table td {
+  border: 1px solid #ddd; /* Adjust the border color as needed */
+  padding: 12px;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .rentals-banner {
+    background-size: 500px;
+    background-repeat:repeat;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .rentals-hero-banner h1 {
+    font-size: 18px;
+  }
+
+  .rentals-hero-banner h2 {
+    font-size: 12px;
+  }
+}
