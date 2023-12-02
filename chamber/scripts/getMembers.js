@@ -1,7 +1,6 @@
 const baseURL = "https://glaubervilane.github.io/wdd230/chamber/";
 const dataURL = "https://glaubervilane.github.io/wdd230/chamber/data/members.json";
 const directory = document.querySelector('.directory-grid');
-
 async function getMembers() {
   try {
     const response = await fetch(dataURL);
@@ -9,7 +8,6 @@ async function getMembers() {
       throw new Error(`Error fetching data: ${response.statusText}`);
     }
     const data = await response.json();
-
     if (data.companies && Array.isArray(data.companies)) {
       displayMembers(data.companies);
     } else {
@@ -19,7 +17,6 @@ async function getMembers() {
     console.error("Error fetching data:", error);
   }
 }
-
 function displayMembers(companies) {
   companies.forEach((company) => {
     let section = document.createElement('section');
@@ -30,7 +27,6 @@ function displayMembers(companies) {
     let image = document.createElement('img');
     let membershipLevel = document.createElement('p');
     let notes = document.createElement('p');
-
     address.textContent = `Address: ${company.address}`;
     phone.textContent = `Telephone: ${company.phone}`;
     url.setAttribute('href', company.url);
@@ -40,18 +36,29 @@ function displayMembers(companies) {
     image.setAttribute('alt', company.name);
     membershipLevel.textContent = `Membership Level: ${company.membershipLevel} Membership`;
     notes.textContent = `${company.notes}`;
-
     name.appendChild(url);
-
     section.appendChild(image);
     section.appendChild(name);
     section.appendChild(address);
     section.appendChild(phone);
     section.appendChild(membershipLevel);
     section.appendChild(notes);
-
     directory.appendChild(section);
   });
 }
 
-getPrices();
+getMembers();
+
+const gridBTN = document.querySelector('#directory-gridBTN');
+const listBTN = document.querySelector('#directory-listBTN');
+const display = document.querySelector('article');
+
+gridBTN.addEventListener('click', () => {
+  display.classList.add('directory-grid');
+  display.classList.remove('directory-list');
+});
+
+listBTN.addEventListener('click', () => {
+  display.classList.add('directory-list');
+  display.classList.remove('directory-grid');
+});
