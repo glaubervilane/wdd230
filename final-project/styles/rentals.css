@@ -33,8 +33,10 @@
 
 /* Styles for the Max Rental Pricing section */
 .max-rental-pricing {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .max-rental-pricing h2 {
