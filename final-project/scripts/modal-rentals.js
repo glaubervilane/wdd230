@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const modal = document.querySelector('.modal');
-  let closeModalBtn = document.querySelector('.close-btn');
-  let detailsBtns = document.querySelectorAll('.details-btn');
+  const closeModalBtn = document.querySelector('.close-btn');
+  const detailsBtns = document.querySelectorAll('.details-btn');
 
   function setupEventListeners() {
     detailsBtns.forEach(btn => {
@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const modalContent = document.querySelector('.modal-content');
         modalContent.innerHTML = `
-          <img src="${details.image}" alt="${details.name}">
-          <h2>${details.name}</h2>
-          <p>${details.description}</p>
-        `;
+              <img src="${details.image}" alt="${details.name}">
+              <h2>${details.name}</h2>
+              <p>${details.description}</p>
+          `;
 
         modal.style.display = 'block';
       });
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Check if elements are present, wait for them to be added if not
   if (!modal || !closeModalBtn || !detailsBtns.length) {
     const observer = new MutationObserver(function () {
-      closeModalBtn = document.querySelector('.close-btn');
-      detailsBtns = document.querySelectorAll('.details-btn');
-      if (modal && closeModalBtn && detailsBtns.length) {
+      const newCloseModalBtn = document.querySelector('.close-btn');
+      const newDetailsBtns = document.querySelectorAll('.details-btn');
+      if (modal && newCloseModalBtn && newDetailsBtns.length) {
         observer.disconnect();
         setupEventListeners();
       }
