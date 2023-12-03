@@ -27,6 +27,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
 </head>
@@ -53,16 +54,64 @@
 
   <main>
     <section id="contact">
-      <!-- Contact page content -->
-      <h1>Contact Us</h1>
-      <!-- TODO: Contact information, Google Map, and a contact form -->
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+
+        <!-- Essential Contact Information -->
+        <div class="contact-info">
+          <h2>Essential Contact Information</h2>
+
+          <p>
+            <strong>Location 1:</strong> Playa del Carmen-Cozumel Ferry Dock, el Centro de Cozumel, Quintana Roo,
+            Mexico
+          </p>
+
+          <p>
+            <strong>Location 2:</strong> 10a Avenida Sur, Cozumel, Mexico
+          </p>
+
+          <p>
+            <strong>Email:</strong> info@scootscozumel.com
+          </p>
+
+          <p>
+            <strong>Phone:</strong> +1 (555) 123-4567
+          </p>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.782845731553!2d-86.95129548489566!3d20.508468086283836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s20.508468,-86.951295!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1672650813942!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Contact Form</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button class="btn-main" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
+
+
 
   <footer class="impressive-footer">
     <div class="footer-container">
       <div class="footer-section about-scoots">
-        <h3>About Scoots</h3>       
+        <h3>About Scoots</h3>
         <img src="./images/logo.png" alt="Scoots Logo" class="logo">
         <p>Scoots is your premier motor scooter rental company on the beautiful island of Cozumel. Explore the island
           with ease and style.</p>
@@ -85,7 +134,7 @@
         <p>Phone: +1 (123) 456-7890</p>
       </div>
     </div>
-  
+
     <div class="footer-social">
       <h3>Follow Us</h3>
       <div class="social-icons">
