@@ -317,6 +317,21 @@ main {
   border-radius: 8px 0 0 8px;
 }
 
+.faq-dropdown {
+  display: none;
+  padding: 10px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* Show dropdown when button is clicked */
+.faq-section.active .faq-dropdown {
+  display: block;
+  transition: 0.5em;
+}
+
 .faq-weather {
   background-color: #e2e2e2;
   padding: 40px 20px;

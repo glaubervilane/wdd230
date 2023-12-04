@@ -109,15 +109,40 @@
       </div>
     </section>
 
-    <section class="faq-weather">
+    <section class="faq-weather" id="faq-weather">
       <div class="section-faq-content">
         <!-- FAQ Section -->
         <div class="faq-section">
           <h3>Frequently Asked Questions</h3>
           <p>Check out all of the most common questions we get from our customers. We strive to exceed expectations to
             ensure you get the most enjoyment on your visit.</p>
-          <a href="#" class="btn-main">View Our FAQ's</a>
+          <button class="btn-main" id="toggle-faq">View Our FAQ's</button>
+
+          <!-- Dropdown content -->
+          <div class="faq-dropdown">
+            <!-- FAQ items go here -->
+            <div class="faq-item">
+              <h4>How can I reach your scooter rental location or arrange pick-up?</h4>
+              <p>Our scooter rental shop is conveniently located is near the Playa del Carmen-Cozumel 
+                Ferry dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya 
+                further south along the coast which caters to the cruise lines and patrons. 
+                We have ample reserved parking for Cozumel ~Scoots~ customers. 
+                Bookings can be made online, or you can call us at (123) 456-7890.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What do your scooter rentals offer?</h4>
+              <p>Our scooter rentals offer self-guided tours, allowing you to explore Cozumel’s best spots
+                at your own pace, creating a personalized and memorable experience. Along with your scooter, 
+                you will receive a correctly fitted, certified helmet that must be worn at all times while riding your scooter.
+                Before you head out on your ride, our staff will happily make suggestions on the best places 
+                to go in the time that you have, but prior to hitting the road, we always take you through 
+                some basic training and assess your confidence and ability riding the scooter.
+                Guided tours are also offered, please ask our friendly staff for more details or call (123) 456-7890.</p>
+            </div>
+            <!-- Add more FAQ items as needed -->
+          </div>
         </div>
+
         <!-- Weather Card (Right Side) -->
         <div class="weather-card">
           <!-- Add your weather information content here -->
@@ -243,7 +268,7 @@
               it’s important to receive proper training. Our friendly staff will provide a lesson when you rent a
               scooter
               to ensure you have full confidence before you hit the road! Enjoy the ride!</p>
-            <a href="#" class="btn-main">Frequently Asked Questions</a>
+            <a href="#faq-weather" class="btn-main">Frequently Asked Questions</a>
           </div>
         </div>
       </div>
@@ -287,7 +312,7 @@
         <p>Phone: +1 (123) 456-7890</p>
       </div>
     </div>
-  
+
     <div class="footer-social">
       <h3>Follow Us</h3>
       <div class="social-icons">
@@ -302,6 +327,7 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/modal.js"></script>
   <script src="scripts/weather.js"></script>
+  <script src="scripts/faq-dropdown.js"></script>
 </body>
 
 </html>
