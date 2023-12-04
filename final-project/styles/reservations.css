@@ -4,20 +4,6 @@
   align-items: center;
 }
 
-.reservations-banner {
-  background-image: url("../images/banner-reservations.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #f4f4f4;
-  width: 100%;
-  padding: 100px;
-  padding-bottom: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .rental-agreement {
   max-width: 800px;
   margin: 20px auto;

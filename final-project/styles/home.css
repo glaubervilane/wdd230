@@ -426,6 +426,25 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.generic-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px;
+  padding-bottom: 200px;
+  padding-top: 250px;
+  display: flex;
+}
+
+#reservations-banner {
+  background-image: url("../images/banner-reservations.jpg");
+}
+
+#contact-banner {
+  background-image: url("../images/banner-contact.jpg");
+}
+
 /*********************** Styles Footer CSS ********************/
 .impressive-footer {
   background-color: #144d89;
