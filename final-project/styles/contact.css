@@ -56,3 +56,19 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.thankyou-section {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.thankyou-section h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.thankyou-section p {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
